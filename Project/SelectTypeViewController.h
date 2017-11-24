@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SelectTypeViewController : UIViewController
+@interface SelectTypeViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UIPickerView *restaurantTypePicker;
+@property (weak, nonatomic) IBOutlet UIPickerView *RestaurantTypePicker;
 
 
 @end

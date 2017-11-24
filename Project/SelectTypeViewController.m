@@ -18,8 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    //self.restaurantTypePicker.delegate = self;
-  //  self.restaurantTypePicker.dataSource = self;
+    self.RestaurantTypePicker.delegate = self;
+    self.RestaurantTypePicker.dataSource = self;
 }
 
 
@@ -31,10 +31,18 @@
 - (NSString *)pickerView:(UIPickerView *)pickerView
              titleForRow:(NSInteger)row
             forComponent:(NSInteger)component{
-    NSString *coordinate = [NSString stringWithFormat: @"%ld, %ld", component, row];
-    
-    return coordinate;
-   }
+    if (row == 0) {
+        return [NSString stringWithFormat:@"Italian"];
+    } else if (row == 1) {
+        return [NSString stringWithFormat:@"Greek"];
+    } else if (row ==2) {
+        return [NSString stringWithFormat:@"Chinese"];
+    } else if (row ==3) {
+        return [NSString stringWithFormat:@"Indian"];
+    } else {
+        return [NSString stringWithFormat:@"Thai"];
+    }
+}
 //content method for picker view
 
 - (void)pickerView:(UIPickerView *)pickerView
@@ -46,7 +54,7 @@
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView
 numberOfRowsInComponent:(NSInteger)component{
-    return 4;
+    return 5;
 }
 //sets number of picker view rows
 
