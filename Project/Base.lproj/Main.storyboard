@@ -107,11 +107,11 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zv1-9h-dl1" id="NoB-dm-gK5">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6l2-Lt-6h4">
-                                            <frame key="frameInset" minX="15" width="345" height="43"/>
+                                            <frame key="frameInset" minX="15" width="345" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -248,7 +248,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NHK-q7-whE" id="HCz-Pk-hRJ">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -401,15 +401,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="viB-Dt-8kg"/>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="viB-Dt-8kg">
+                                <connections>
+                                    <action selector="NoOfGuestStepper:" destination="D6q-tR-HYa" eventType="valueChanged" id="qR8-m3-YRH"/>
+                                </connections>
+                            </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of guests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcy-4g-1VC">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkS-kd-w5H">
-                                <frame key="frameInset" minX="170" minY="196" width="60" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -421,20 +418,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="NoOfGuestsEdit:" destination="D6q-tR-HYa" eventType="editingDidEnd" id="0qR-Rd-vGS"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="dd/mm/yy" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="caM-6k-sbU">
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="87" id="oj9-gq-GQR"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WvE-7P-0tm">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="nqw-7O-9xe"/>
-                                </constraints>
-                            </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WG6-2q-KJa">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="222" id="8aX-NC-Izo"/>
@@ -448,35 +435,32 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fto-ge-And">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="999-2M-U9a"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="XK1-La-URQ">
+                                <date key="date" timeIntervalSinceReferenceDate="533240790.851372">
+                                    <!--2017-11-24 18:26:30 +0000-->
+                                </date>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WvE-7P-0tm" firstAttribute="top" secondItem="fDF-A1-niB" secondAttribute="bottom" constant="132" id="7me-G4-z6i"/>
                             <constraint firstItem="c2m-2G-C47" firstAttribute="leading" secondItem="DYv-SW-r2n" secondAttribute="leadingMargin" constant="154" id="9hx-hD-CiB"/>
-                            <constraint firstItem="WvE-7P-0tm" firstAttribute="centerX" secondItem="DYv-SW-r2n" secondAttribute="centerX" id="CQV-02-kzS"/>
-                            <constraint firstItem="Fto-ge-And" firstAttribute="top" secondItem="fDF-A1-niB" secondAttribute="bottom" constant="65" id="G7g-vm-DOD"/>
+                            <constraint firstItem="XK1-La-URQ" firstAttribute="centerX" secondItem="DYv-SW-r2n" secondAttribute="centerX" id="HKF-hH-5v2"/>
                             <constraint firstItem="WG6-2q-KJa" firstAttribute="leading" secondItem="DYv-SW-r2n" secondAttribute="leadingMargin" constant="77" id="Kky-yx-lTw"/>
                             <constraint firstItem="viB-Dt-8kg" firstAttribute="top" secondItem="fDF-A1-niB" secondAttribute="bottom" constant="382" id="LtA-PP-qnL"/>
                             <constraint firstItem="viB-Dt-8kg" firstAttribute="leading" secondItem="DYv-SW-r2n" secondAttribute="leadingMargin" constant="249" id="VHt-mw-gm5"/>
                             <constraint firstItem="HDw-ju-EOb" firstAttribute="centerX" secondItem="DYv-SW-r2n" secondAttribute="centerX" id="XYJ-yf-LO5"/>
-                            <constraint firstItem="caM-6k-sbU" firstAttribute="centerX" secondItem="DYv-SW-r2n" secondAttribute="centerX" id="ZIa-nQ-WLt"/>
-                            <constraint firstItem="caM-6k-sbU" firstAttribute="top" secondItem="fDF-A1-niB" secondAttribute="bottom" constant="60" id="aOw-tI-2Fg"/>
                             <constraint firstItem="WG6-2q-KJa" firstAttribute="top" secondItem="fDF-A1-niB" secondAttribute="bottom" constant="502" id="cYX-G6-LGs"/>
                             <constraint firstItem="bcy-4g-1VC" firstAttribute="top" secondItem="fDF-A1-niB" secondAttribute="bottom" constant="390" id="fIe-8O-uYA"/>
+                            <constraint firstItem="XK1-La-URQ" firstAttribute="top" secondItem="fDF-A1-niB" secondAttribute="bottom" constant="101" id="gtR-es-CaI"/>
                             <constraint firstItem="HDw-ju-EOb" firstAttribute="top" secondItem="fDF-A1-niB" secondAttribute="bottom" constant="8" id="la5-1Q-MDu"/>
-                            <constraint firstItem="Fto-ge-And" firstAttribute="leading" secondItem="DYv-SW-r2n" secondAttribute="leadingMargin" constant="39" id="ogE-PM-xGU"/>
                             <constraint firstAttribute="leadingMargin" secondItem="bcy-4g-1VC" secondAttribute="leading" id="tUf-xu-Wly"/>
                             <constraint firstItem="c2m-2G-C47" firstAttribute="top" secondItem="fDF-A1-niB" secondAttribute="bottom" constant="381" id="tgt-JN-Go1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="DatePicker" destination="XK1-La-URQ" id="NCh-B7-kgV"/>
+                        <outlet property="NoOfGuests" destination="c2m-2G-C47" id="Y4D-zO-qcf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zxi-9w-iEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

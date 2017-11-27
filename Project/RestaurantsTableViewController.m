@@ -7,7 +7,7 @@
 //
 
 #import "RestaurantsTableViewController.h"
-
+#import "SelectTypeViewController.h"
 
 @interface RestaurantsTableViewController ()
 

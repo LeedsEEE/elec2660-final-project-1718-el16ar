@@ -45,7 +45,7 @@
         theOlive.restaurantAddress = @"188 - 190 Harrogate Rd, Leeds LS7 4NZ";
         theOlive.restaurantType = @"Greek";
         theOlive.restaurantDescription = @"Concise menu of Greek favourites in a bustling contemporary dining room with special early menu";
-        [self.ItalianRestaurants addObject:theOlive];
+        [self.GreekRestaurants addObject:theOlive];
         
     }
     return self;

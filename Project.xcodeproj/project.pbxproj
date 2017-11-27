@@ -16,6 +16,7 @@
 		A6C369C01FC87C1D00C53B89 /* SelectTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C369BF1FC87C1D00C53B89 /* SelectTypeViewController.m */; };
 		A6C369C31FC87C3400C53B89 /* RestaurantsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C369C21FC87C3400C53B89 /* RestaurantsTableViewController.m */; };
 		A6C369C61FC8821800C53B89 /* BookingCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C369C51FC8821800C53B89 /* BookingCreateViewController.m */; };
+		A6C369C91FC890E600C53B89 /* Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6C369C71FC890E600C53B89 /* Project.xcdatamodeld */; };
 		A6EDB32C1FBB41BC00E6CEE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EDB32B1FBB41BC00E6CEE0 /* main.m */; };
 		A6EDB32F1FBB41BC00E6CEE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EDB32E1FBB41BC00E6CEE0 /* AppDelegate.m */; };
 		A6EDB3321FBB41BC00E6CEE0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EDB3311FBB41BC00E6CEE0 /* ViewController.m */; };
@@ -62,6 +63,7 @@
 		A6C369C21FC87C3400C53B89 /* RestaurantsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantsTableViewController.m; sourceTree = "<group>"; };
 		A6C369C41FC8821800C53B89 /* BookingCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingCreateViewController.h; sourceTree = "<group>"; };
 		A6C369C51FC8821800C53B89 /* BookingCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingCreateViewController.m; sourceTree = "<group>"; };
+		A6C369C81FC890E600C53B89 /* Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Project.xcdatamodel; sourceTree = "<group>"; };
 		A6EDB3271FBB41BB00E6CEE0 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6EDB32B1FBB41BC00E6CEE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A6EDB32D1FBB41BC00E6CEE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				A6C369C51FC8821800C53B89 /* BookingCreateViewController.m */,
 				A6EDB3361FBB41BD00E6CEE0 /* Assets.xcassets */,
 				A6EDB3381FBB41BD00E6CEE0 /* LaunchScreen.storyboard */,
+				A6C369C71FC890E600C53B89 /* Project.xcdatamodeld */,
 				A6EDB33B1FBB41BD00E6CEE0 /* Info.plist */,
 				A6EDB32A1FBB41BB00E6CEE0 /* Supporting Files */,
 			);
@@ -319,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6C369C61FC8821800C53B89 /* BookingCreateViewController.m in Sources */,
+				A6C369C91FC890E600C53B89 /* Project.xcdatamodeld in Sources */,
 				A6C369C01FC87C1D00C53B89 /* SelectTypeViewController.m in Sources */,
 				A6C369B41FC87BCD00C53B89 /* BookingsViewController.m in Sources */,
 				A6C369B71FC87BE900C53B89 /* Restaurant.m in Sources */,
@@ -582,6 +586,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A6C369C71FC890E600C53B89 /* Project.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A6C369C81FC890E600C53B89 /* Project.xcdatamodel */,
+			);
+			currentVersion = A6C369C81FC890E600C53B89 /* Project.xcdatamodel */;
+			path = Project.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A6EDB31F1FBB41B400E6CEE0 /* Project object */;
 }

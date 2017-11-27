@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface BookingCreateViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *NoOfGuests;
+- (IBAction)NoOfGuestsEdit:(UITextField *)sender;
+@property (weak, nonatomic) IBOutlet UIDatePicker *DatePicker;
+@property(nonatomic) NSInteger minuteInterval;
 
 @end

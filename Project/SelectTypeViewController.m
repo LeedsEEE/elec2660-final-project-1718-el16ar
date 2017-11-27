@@ -48,7 +48,17 @@
 - (void)pickerView:(UIPickerView *)pickerView
       didSelectRow:(NSInteger)row
        inComponent:(NSInteger)component{
-    
+    if (row == 0){
+        _typeSelected = 0;
+    } else if (row == 1){
+        _typeSelected = 1;
+    }else if (row == 2){
+        _typeSelected = 2;
+    }else if (row == 3){
+        _typeSelected = 3;
+    }else if (row == 4){
+        _typeSelected = 4;
+    }
 }
 //selection action method for picker view
 

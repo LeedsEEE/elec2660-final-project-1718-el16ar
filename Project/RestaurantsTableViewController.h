@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "RestaurantDataModel.h"
 #import "RestaurantViewController.h"
+#import "SelectTypeViewController.h"
 
 @interface RestaurantsTableViewController : UITableViewController
 @property (nonatomic, strong) RestaurantDataModel *data;
