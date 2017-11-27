@@ -7,6 +7,7 @@
 //
 
 #import "BookingCreateViewController.h"
+#import "BookingEntity+Add.h"
 
 @interface BookingCreateViewController ()
 
@@ -33,6 +34,18 @@
 
 - (IBAction)NoOfGuestsEdit:(UITextField *)sender {
     
+}
+
+- (IBAction)ConfirmButtonPressed:(UIButton *)sender {
+    
+    NSDictionary *bookingInfo = @{@"restaurant": self.Restaurantselected.selectedRestaurant, @"date": self.DatePicker.date,@"noOfGuests":self.NoOfGuests.text};
+    
+    []
+    
+    //self.NoOfGuests.text.intValue;
+    // self.DatePicker.date
+   // self.Restaurantselected.selectedRestaurant;
+
 }
 @end
 

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A665BB3C1FCC891B006BFA85 /* Food-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A665BB3B1FCC891B006BFA85 /* Food-icon@3x.png */; };
+		A665BB3E1FCC8922006BFA85 /* Food-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A665BB3D1FCC8922006BFA85 /* Food-icon@2x.png */; };
+		A665BB401FCC8928006BFA85 /* Food-icon@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = A665BB3F1FCC8928006BFA85 /* Food-icon@1x.png */; };
+		A665BB421FCC8930006BFA85 /* Clock-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A665BB411FCC8930006BFA85 /* Clock-icon@3x.png */; };
+		A665BB441FCC893B006BFA85 /* Clock-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A665BB431FCC893B006BFA85 /* Clock-icon@2x.png */; };
+		A665BB461FCC8941006BFA85 /* Clock-icon@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = A665BB451FCC8941006BFA85 /* Clock-icon@1x.png */; };
+		A665BB4E1FCC90D8006BFA85 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A665BB4D1FCC90D8006BFA85 /* CoreData.framework */; };
+		A665BB591FCC9565006BFA85 /* BookingEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A665BB581FCC9565006BFA85 /* BookingEntity.m */; };
+		A665BB5C1FCC9A59006BFA85 /* BookingEntity+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = A665BB5B1FCC9A59006BFA85 /* BookingEntity+Add.m */; };
 		A6C369AE1FC87B7B00C53B89 /* Booking.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C369AD1FC87B7B00C53B89 /* Booking.m */; };
 		A6C369B11FC87BA200C53B89 /* BookingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C369B01FC87BA200C53B89 /* BookingsTableViewController.m */; };
 		A6C369B41FC87BCD00C53B89 /* BookingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C369B31FC87BCD00C53B89 /* BookingsViewController.m */; };
@@ -45,6 +54,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A665BB3B1FCC891B006BFA85 /* Food-icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Food-icon@3x.png"; sourceTree = "<group>"; };
+		A665BB3D1FCC8922006BFA85 /* Food-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Food-icon@2x.png"; sourceTree = "<group>"; };
+		A665BB3F1FCC8928006BFA85 /* Food-icon@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Food-icon@1x.png"; sourceTree = "<group>"; };
+		A665BB411FCC8930006BFA85 /* Clock-icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clock-icon@3x.png"; sourceTree = "<group>"; };
+		A665BB431FCC893B006BFA85 /* Clock-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clock-icon@2x.png"; sourceTree = "<group>"; };
+		A665BB451FCC8941006BFA85 /* Clock-icon@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clock-icon@1x.png"; sourceTree = "<group>"; };
+		A665BB4D1FCC90D8006BFA85 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A665BB571FCC9565006BFA85 /* BookingEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingEntity.h; sourceTree = "<group>"; };
+		A665BB581FCC9565006BFA85 /* BookingEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingEntity.m; sourceTree = "<group>"; };
+		A665BB5A1FCC9A59006BFA85 /* BookingEntity+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BookingEntity+Add.h"; sourceTree = "<group>"; };
+		A665BB5B1FCC9A59006BFA85 /* BookingEntity+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BookingEntity+Add.m"; sourceTree = "<group>"; };
 		A6C369AC1FC87B6800C53B89 /* Booking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Booking.h; sourceTree = "<group>"; };
 		A6C369AD1FC87B7B00C53B89 /* Booking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Booking.m; sourceTree = "<group>"; };
 		A6C369AF1FC87BA200C53B89 /* BookingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingsTableViewController.h; sourceTree = "<group>"; };
@@ -87,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A665BB4E1FCC90D8006BFA85 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +128,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A665BB4C1FCC90D8006BFA85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A665BB4D1FCC90D8006BFA85 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A6EDB31E1FBB41B400E6CEE0 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +143,7 @@
 				A6EDB3431FBB41BD00E6CEE0 /* ProjectTests */,
 				A6EDB34E1FBB41BE00E6CEE0 /* ProjectUITests */,
 				A6EDB3281FBB41BB00E6CEE0 /* Products */,
+				A665BB4C1FCC90D8006BFA85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +162,15 @@
 			children = (
 				A6EDB32D1FBB41BC00E6CEE0 /* AppDelegate.h */,
 				A6EDB32E1FBB41BC00E6CEE0 /* AppDelegate.m */,
-				A6EDB3301FBB41BC00E6CEE0 /* ViewController.h */,
+				A665BB571FCC9565006BFA85 /* BookingEntity.h */,
+				A665BB581FCC9565006BFA85 /* BookingEntity.m */,
+				A665BB5A1FCC9A59006BFA85 /* BookingEntity+Add.h */,
+				A665BB5B1FCC9A59006BFA85 /* BookingEntity+Add.m */,
 				A6C369AC1FC87B6800C53B89 /* Booking.h */,
 				A6C369AD1FC87B7B00C53B89 /* Booking.m */,
+				A6C369C41FC8821800C53B89 /* BookingCreateViewController.h */,
+				A6C369C51FC8821800C53B89 /* BookingCreateViewController.m */,
+				A6EDB3301FBB41BC00E6CEE0 /* ViewController.h */,
 				A6C369AF1FC87BA200C53B89 /* BookingsTableViewController.h */,
 				A6C369B01FC87BA200C53B89 /* BookingsTableViewController.m */,
 				A6C369B21FC87BCD00C53B89 /* BookingsViewController.h */,
@@ -150,9 +186,13 @@
 				A6C369BE1FC87C1D00C53B89 /* SelectTypeViewController.h */,
 				A6C369BF1FC87C1D00C53B89 /* SelectTypeViewController.m */,
 				A6EDB3311FBB41BC00E6CEE0 /* ViewController.m */,
+				A665BB3B1FCC891B006BFA85 /* Food-icon@3x.png */,
+				A665BB3D1FCC8922006BFA85 /* Food-icon@2x.png */,
+				A665BB3F1FCC8928006BFA85 /* Food-icon@1x.png */,
+				A665BB411FCC8930006BFA85 /* Clock-icon@3x.png */,
+				A665BB431FCC893B006BFA85 /* Clock-icon@2x.png */,
+				A665BB451FCC8941006BFA85 /* Clock-icon@1x.png */,
 				A6EDB3331FBB41BC00E6CEE0 /* Main.storyboard */,
-				A6C369C41FC8821800C53B89 /* BookingCreateViewController.h */,
-				A6C369C51FC8821800C53B89 /* BookingCreateViewController.m */,
 				A6EDB3361FBB41BD00E6CEE0 /* Assets.xcassets */,
 				A6EDB3381FBB41BD00E6CEE0 /* LaunchScreen.storyboard */,
 				A6C369C71FC890E600C53B89 /* Project.xcdatamodeld */,
@@ -255,6 +295,7 @@
 				TargetAttributes = {
 					A6EDB3261FBB41B600E6CEE0 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					A6EDB33F1FBB41BD00E6CEE0 = {
@@ -294,8 +335,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A665BB461FCC8941006BFA85 /* Clock-icon@1x.png in Resources */,
+				A665BB441FCC893B006BFA85 /* Clock-icon@2x.png in Resources */,
+				A665BB3C1FCC891B006BFA85 /* Food-icon@3x.png in Resources */,
 				A6EDB33A1FBB41BD00E6CEE0 /* LaunchScreen.storyboard in Resources */,
+				A665BB3E1FCC8922006BFA85 /* Food-icon@2x.png in Resources */,
 				A6EDB3371FBB41BD00E6CEE0 /* Assets.xcassets in Resources */,
+				A665BB401FCC8928006BFA85 /* Food-icon@1x.png in Resources */,
+				A665BB421FCC8930006BFA85 /* Clock-icon@3x.png in Resources */,
 				A6EDB3351FBB41BC00E6CEE0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,10 +374,12 @@
 				A6C369B41FC87BCD00C53B89 /* BookingsViewController.m in Sources */,
 				A6C369B71FC87BE900C53B89 /* Restaurant.m in Sources */,
 				A6C369B11FC87BA200C53B89 /* BookingsTableViewController.m in Sources */,
+				A665BB5C1FCC9A59006BFA85 /* BookingEntity+Add.m in Sources */,
 				A6C369BD1FC87C1100C53B89 /* RestaurantViewController.m in Sources */,
 				A6EDB3321FBB41BC00E6CEE0 /* ViewController.m in Sources */,
 				A6C369C31FC87C3400C53B89 /* RestaurantsTableViewController.m in Sources */,
 				A6C369BA1FC87BFD00C53B89 /* RestaurantDataModel.m in Sources */,
+				A665BB591FCC9565006BFA85 /* BookingEntity.m in Sources */,
 				A6C369AE1FC87B7B00C53B89 /* Booking.m in Sources */,
 				A6EDB32F1FBB41BC00E6CEE0 /* AppDelegate.m in Sources */,
 				A6EDB32C1FBB41BC00E6CEE0 /* main.m in Sources */,
@@ -482,10 +531,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.leeds.Project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Project-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -493,10 +546,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.ac.leeds.Project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Project-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

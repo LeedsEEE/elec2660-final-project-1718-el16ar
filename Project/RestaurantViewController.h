@@ -16,6 +16,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *restaurantAddressLabel;
 @property (weak, nonatomic) IBOutlet UILabel *restaurantDescriptionLabel;
 
+@property NSString* selectedRestaurant;
 @property (strong, nonatomic) Restaurant *restaurant;
+
+- (IBAction)createButtonPressed:(UIButton *)sender;
 
 @end

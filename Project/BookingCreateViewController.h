@@ -7,11 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RestaurantViewController.h"
+#import "BookingEntity.h"
 
 @interface BookingCreateViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *NoOfGuests;
-- (IBAction)NoOfGuestsEdit:(UITextField *)sender;
 @property (weak, nonatomic) IBOutlet UIDatePicker *DatePicker;
 @property(nonatomic) NSInteger minuteInterval;
+@property (nonatomic, strong) RestaurantViewController *Restaurantselected;
+@property (weak, nonatomic) IBOutlet UITextView *textOutput;
+
+
+- (IBAction)NoOfGuestsEdit:(UITextField *)sender;
+- (IBAction)ConfirmButtonPressed:(UIButton *)sender;
+
 
 @end

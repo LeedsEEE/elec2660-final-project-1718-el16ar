@@ -42,4 +42,8 @@
 }
 */
 
+- (IBAction)createButtonPressed:(UIButton *)sender {
+    _selectedRestaurant = _restaurantNameLabel.text;
+    //restaurant name recorded for next screen
+}
 @end
