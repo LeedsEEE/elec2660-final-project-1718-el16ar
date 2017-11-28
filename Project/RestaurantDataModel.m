@@ -20,6 +20,7 @@
         bellaItalia.restaurantName = @"Bella Italia";
         bellaItalia.restaurantAddress = @"145 Briggate, Leeds LS1 6BR";
         bellaItalia.restaurantType = @"Italian";
+        bellaItalia.restaurantImage = @"BellaItalia.jpeg";
         bellaItalia.restaurantDescription = @"Chain venue for Italian pasta, pizza and grill dishes, with a special children's menu";
         [self.ItalianRestaurants addObject:bellaItalia];
         
@@ -27,6 +28,7 @@
         Prezzo.restaurantName = @"Prezzo";
         Prezzo.restaurantAddress = @"16 - 18 The Headrow, Leeds LS1 8TL";
         Prezzo.restaurantType = @"Italian";
+        Prezzo.restaurantImage = @"Prezzo.jpeg";
         Prezzo.restaurantDescription = @"Casual Italian chain restaurant for stone-baked pizzas and classic pastas, plus seperate kids' menu";
         [self.ItalianRestaurants addObject:Prezzo];
 

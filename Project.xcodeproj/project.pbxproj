@@ -16,6 +16,10 @@
 		A665BB4E1FCC90D8006BFA85 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A665BB4D1FCC90D8006BFA85 /* CoreData.framework */; };
 		A665BB591FCC9565006BFA85 /* BookingEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A665BB581FCC9565006BFA85 /* BookingEntity.m */; };
 		A665BB5C1FCC9A59006BFA85 /* BookingEntity+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = A665BB5B1FCC9A59006BFA85 /* BookingEntity+Add.m */; };
+		A6980ABD1FCDCBFA0090CAB5 /* BellaItalia.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A6980ABC1FCDCBFA0090CAB5 /* BellaItalia.jpeg */; };
+		A6980AC21FCDD2A30090CAB5 /* Booking+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A6980ABF1FCDD2A30090CAB5 /* Booking+CoreDataClass.m */; };
+		A6980AC31FCDD2A30090CAB5 /* Booking+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A6980AC11FCDD2A30090CAB5 /* Booking+CoreDataProperties.m */; };
+		A6980AC51FCDD4180090CAB5 /* Prezzo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A6980AC41FCDD4180090CAB5 /* Prezzo.jpeg */; };
 		A6C369AE1FC87B7B00C53B89 /* Booking.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C369AD1FC87B7B00C53B89 /* Booking.m */; };
 		A6C369B11FC87BA200C53B89 /* BookingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C369B01FC87BA200C53B89 /* BookingsTableViewController.m */; };
 		A6C369B41FC87BCD00C53B89 /* BookingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C369B31FC87BCD00C53B89 /* BookingsViewController.m */; };
@@ -61,10 +65,16 @@
 		A665BB431FCC893B006BFA85 /* Clock-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clock-icon@2x.png"; sourceTree = "<group>"; };
 		A665BB451FCC8941006BFA85 /* Clock-icon@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clock-icon@1x.png"; sourceTree = "<group>"; };
 		A665BB4D1FCC90D8006BFA85 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		A665BB571FCC9565006BFA85 /* BookingEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingEntity.h; sourceTree = "<group>"; };
-		A665BB581FCC9565006BFA85 /* BookingEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingEntity.m; sourceTree = "<group>"; };
+		A665BB571FCC9565006BFA85 /* BookingEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BookingEntity.h; path = Project/BookingEntity.h; sourceTree = "<group>"; };
+		A665BB581FCC9565006BFA85 /* BookingEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BookingEntity.m; path = Project/BookingEntity.m; sourceTree = "<group>"; };
 		A665BB5A1FCC9A59006BFA85 /* BookingEntity+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BookingEntity+Add.h"; sourceTree = "<group>"; };
 		A665BB5B1FCC9A59006BFA85 /* BookingEntity+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BookingEntity+Add.m"; sourceTree = "<group>"; };
+		A6980ABC1FCDCBFA0090CAB5 /* BellaItalia.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BellaItalia.jpeg; sourceTree = "<group>"; };
+		A6980ABE1FCDD2A30090CAB5 /* Booking+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Booking+CoreDataClass.h"; sourceTree = "<group>"; };
+		A6980ABF1FCDD2A30090CAB5 /* Booking+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Booking+CoreDataClass.m"; sourceTree = "<group>"; };
+		A6980AC01FCDD2A30090CAB5 /* Booking+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Booking+CoreDataProperties.h"; sourceTree = "<group>"; };
+		A6980AC11FCDD2A30090CAB5 /* Booking+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Booking+CoreDataProperties.m"; sourceTree = "<group>"; };
+		A6980AC41FCDD4180090CAB5 /* Prezzo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Prezzo.jpeg; sourceTree = "<group>"; };
 		A6C369AC1FC87B6800C53B89 /* Booking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Booking.h; sourceTree = "<group>"; };
 		A6C369AD1FC87B7B00C53B89 /* Booking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Booking.m; sourceTree = "<group>"; };
 		A6C369AF1FC87BA200C53B89 /* BookingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingsTableViewController.h; sourceTree = "<group>"; };
@@ -139,6 +149,8 @@
 		A6EDB31E1FBB41B400E6CEE0 = {
 			isa = PBXGroup;
 			children = (
+				A665BB571FCC9565006BFA85 /* BookingEntity.h */,
+				A665BB581FCC9565006BFA85 /* BookingEntity.m */,
 				A6EDB3291FBB41BB00E6CEE0 /* Project */,
 				A6EDB3431FBB41BD00E6CEE0 /* ProjectTests */,
 				A6EDB34E1FBB41BE00E6CEE0 /* ProjectUITests */,
@@ -160,10 +172,12 @@
 		A6EDB3291FBB41BB00E6CEE0 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				A6980ABE1FCDD2A30090CAB5 /* Booking+CoreDataClass.h */,
+				A6980ABF1FCDD2A30090CAB5 /* Booking+CoreDataClass.m */,
+				A6980AC01FCDD2A30090CAB5 /* Booking+CoreDataProperties.h */,
+				A6980AC11FCDD2A30090CAB5 /* Booking+CoreDataProperties.m */,
 				A6EDB32D1FBB41BC00E6CEE0 /* AppDelegate.h */,
 				A6EDB32E1FBB41BC00E6CEE0 /* AppDelegate.m */,
-				A665BB571FCC9565006BFA85 /* BookingEntity.h */,
-				A665BB581FCC9565006BFA85 /* BookingEntity.m */,
 				A665BB5A1FCC9A59006BFA85 /* BookingEntity+Add.h */,
 				A665BB5B1FCC9A59006BFA85 /* BookingEntity+Add.m */,
 				A6C369AC1FC87B6800C53B89 /* Booking.h */,
@@ -186,6 +200,8 @@
 				A6C369BE1FC87C1D00C53B89 /* SelectTypeViewController.h */,
 				A6C369BF1FC87C1D00C53B89 /* SelectTypeViewController.m */,
 				A6EDB3311FBB41BC00E6CEE0 /* ViewController.m */,
+				A6980AC41FCDD4180090CAB5 /* Prezzo.jpeg */,
+				A6980ABC1FCDCBFA0090CAB5 /* BellaItalia.jpeg */,
 				A665BB3B1FCC891B006BFA85 /* Food-icon@3x.png */,
 				A665BB3D1FCC8922006BFA85 /* Food-icon@2x.png */,
 				A665BB3F1FCC8928006BFA85 /* Food-icon@1x.png */,
@@ -339,11 +355,13 @@
 				A665BB441FCC893B006BFA85 /* Clock-icon@2x.png in Resources */,
 				A665BB3C1FCC891B006BFA85 /* Food-icon@3x.png in Resources */,
 				A6EDB33A1FBB41BD00E6CEE0 /* LaunchScreen.storyboard in Resources */,
+				A6980ABD1FCDCBFA0090CAB5 /* BellaItalia.jpeg in Resources */,
 				A665BB3E1FCC8922006BFA85 /* Food-icon@2x.png in Resources */,
 				A6EDB3371FBB41BD00E6CEE0 /* Assets.xcassets in Resources */,
 				A665BB401FCC8928006BFA85 /* Food-icon@1x.png in Resources */,
 				A665BB421FCC8930006BFA85 /* Clock-icon@3x.png in Resources */,
 				A6EDB3351FBB41BC00E6CEE0 /* Main.storyboard in Resources */,
+				A6980AC51FCDD4180090CAB5 /* Prezzo.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +390,7 @@
 				A6C369C91FC890E600C53B89 /* Project.xcdatamodeld in Sources */,
 				A6C369C01FC87C1D00C53B89 /* SelectTypeViewController.m in Sources */,
 				A6C369B41FC87BCD00C53B89 /* BookingsViewController.m in Sources */,
+				A6980AC31FCDD2A30090CAB5 /* Booking+CoreDataProperties.m in Sources */,
 				A6C369B71FC87BE900C53B89 /* Restaurant.m in Sources */,
 				A6C369B11FC87BA200C53B89 /* BookingsTableViewController.m in Sources */,
 				A665BB5C1FCC9A59006BFA85 /* BookingEntity+Add.m in Sources */,
@@ -383,6 +402,7 @@
 				A6C369AE1FC87B7B00C53B89 /* Booking.m in Sources */,
 				A6EDB32F1FBB41BC00E6CEE0 /* AppDelegate.m in Sources */,
 				A6EDB32C1FBB41BC00E6CEE0 /* main.m in Sources */,
+				A6980AC21FCDD2A30090CAB5 /* Booking+CoreDataClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

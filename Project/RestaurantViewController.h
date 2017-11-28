@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *restaurantTypeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *restaurantAddressLabel;
 @property (weak, nonatomic) IBOutlet UILabel *restaurantDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *restaurantImage;
 
 @property NSString* selectedRestaurant;
 @property (strong, nonatomic) Restaurant *restaurant;

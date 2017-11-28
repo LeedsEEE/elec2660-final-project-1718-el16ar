@@ -18,7 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.minuteInterval = 5;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,9 +37,11 @@
 
 - (IBAction)ConfirmButtonPressed:(UIButton *)sender {
     
-    NSDictionary *bookingInfo = @{@"restaurant": self.Restaurantselected.selectedRestaurant, @"date": self.DatePicker.date,@"noOfGuests":self.NoOfGuests.text};
+    NSDictionary *bookingInfo = @{@"restaurant": self.Restaurantselected.selectedRestaurant,
+                                  @"date": self.DatePicker.date ,
+                                  @"noOfGuests":self.NoOfGuests.text};
     
-    []
+    self.textOutput.text = [BookingEntity addBookingEntityInfoFromDictionary:bookingInfo].description;
     
     //self.NoOfGuests.text.intValue;
     // self.DatePicker.date

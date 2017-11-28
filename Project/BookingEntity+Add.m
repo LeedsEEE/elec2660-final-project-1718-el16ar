@@ -19,6 +19,8 @@
     
     BookingEntity *bookingEntity = nil;
     
+    
+    
     //New object created
     bookingEntity = [NSEntityDescription insertNewObjectForEntityForName:@"BookingEntity" inManagedObjectContext:context];
     

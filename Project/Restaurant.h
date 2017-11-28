@@ -14,5 +14,6 @@
 @property (nonatomic, strong) NSString *restaurantAddress;
 @property (nonatomic, strong) NSString *restaurantType;
 @property (nonatomic, strong) NSString *restaurantDescription;
+@property (nonatomic, strong) NSString *restaurantImage;
 
 @end

@@ -22,7 +22,7 @@
     self.restaurantTypeLabel.text = self.restaurant.restaurantType;
     self.restaurantAddressLabel.text = self.restaurant.restaurantAddress;
     self.restaurantDescriptionLabel.text = self.restaurant.restaurantDescription;
-
+    self.restaurantImage.image = [UIImage imageNamed:self.restaurant.restaurantImage];
 }
 
 - (void)didReceiveMemoryWarning {
