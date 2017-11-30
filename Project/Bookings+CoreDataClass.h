@@ -1,8 +1,8 @@
 //
-//  Booking+CoreDataClass.h
+//  Bookings+CoreDataClass.h
 //  Project
 //
-//  Created by Andrew Roy [el16ar] on 28/11/2017.
+//  Created by Andrew Roy [el16ar] on 30/11/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
@@ -11,10 +11,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Booking : NSManagedObject
+@interface Bookings : NSManagedObject
 
 @end
 
 NS_ASSUME_NONNULL_END
 
-#import "Booking+CoreDataProperties.h"
+#import "Bookings+CoreDataProperties.h"

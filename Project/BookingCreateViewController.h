@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "RestaurantViewController.h"
-#import "BookingEntity.h"
 
 @interface BookingCreateViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *NoOfGuests;

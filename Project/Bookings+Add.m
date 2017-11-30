@@ -1,23 +1,23 @@
 //
-//  BookingEntity+Add.m
+//  Bookings+Add.m
 //  Project
 //
-//  Created by Andrew Roy [el16ar] on 27/11/2017.
+//  Created by Andrew Roy [el16ar] on 30/11/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
-#import "BookingEntity+Add.h"
+#import "Bookings+Add.h"
 #import "AppDelegate.h"
 
-@implementation BookingEntity (Add)
+@implementation Bookings (Add)
 
-+ (BookingEntity *)addBookingEntityInfoFromDictionary:(NSDictionary *)bookingEntityInfo
++ (Bookings *)addBookingEntityInfoFromDictionary:(NSDictionary *)bookingEntityInfo
 
 {
     AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context = [[appDelegate persistentContainer] viewContext];
     
-    BookingEntity *bookingEntity = nil;
+    Bookings *bookingEntity = nil;
     
     
     
