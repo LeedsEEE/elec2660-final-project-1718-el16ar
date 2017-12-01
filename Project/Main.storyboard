@@ -43,7 +43,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Select Restaurant Type"/>
                                 <connections>
-                                    <segue destination="0fJ-Qw-tyv" kind="show" id="3A9-Y9-bHy">
+                                    <segue destination="0fJ-Qw-tyv" kind="show" identifier="typeSelect" id="3A9-Y9-bHy">
                                         <nil key="action"/>
                                     </segue>
                                 </connections>
@@ -107,11 +107,11 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zv1-9h-dl1" id="NoB-dm-gK5">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6l2-Lt-6h4">
-                                            <frame key="frameInset" minX="15" width="345" height="43.5"/>
+                                            <frame key="frameInset" minX="15" width="345" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -195,7 +195,7 @@
                                 <state key="normal" title="Create Reservation"/>
                                 <connections>
                                     <action selector="createButtonPressed:" destination="pq0-Oy-HSK" eventType="touchUpInside" id="fJy-zY-D45"/>
-                                    <segue destination="D6q-tR-HYa" kind="show" id="lgy-qf-Jha">
+                                    <segue destination="D6q-tR-HYa" kind="show" identifier="restaurantdata" id="lgy-qf-Jha">
                                         <nil key="action"/>
                                     </segue>
                                 </connections>
@@ -250,7 +250,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NHK-q7-whE" id="HCz-Pk-hRJ">
-                                    <frame key="frameInset" width="375" height="44"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -429,9 +429,6 @@
                                 <state key="normal" title="Confirm Reservation Details"/>
                                 <connections>
                                     <action selector="ConfirmButtonPressed:" destination="D6q-tR-HYa" eventType="touchUpInside" id="EGh-fh-wlK"/>
-                                    <segue destination="asb-AC-oUd" kind="show" id="E5a-u4-7q2">
-                                        <nil key="action"/>
-                                    </segue>
                                 </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="XK1-La-URQ">

@@ -35,17 +35,12 @@
 }
 
 - (IBAction)ConfirmButtonPressed:(UIButton *)sender {
+    NSLog(@"%@", self.restaurant.restaurantName);
+   NSDictionary *bookingInfo = @{@"restaurant": self.restaurant.restaurantName,
+                               @"date": self.DatePicker.date ,
+                              @"noOfGuests": self.NoOfGuests.text};
     
-    //NSDictionary *bookingInfo = @{@"restaurant": self.Restaurantselected.selectedRestaurant,
-      //                            @"date": self.DatePicker.date ,
-         //                         @"noOfGuests": self.NoOfGuests.text};
-    
-    //self.textOutput.text = [Booking addBookingInfoFromDictionary:bookingInfo].description;
-    
-    //self.NoOfGuests.text.intValue;
-    // self.DatePicker.date
-   // self.Restaurantselected.selectedRestaurant;
-
+    self.textOutput.text = [Bookings addBookingEntityInfoFromDictionary:bookingInfo].description;
 }
 @end
 

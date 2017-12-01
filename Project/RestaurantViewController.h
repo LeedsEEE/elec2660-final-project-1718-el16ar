@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "RestaurantDataModel.h"
 #import "RestaurantViewController.h"
+#import "BookingCreateViewController.h"
 
 @interface RestaurantViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *restaurantNameLabel;
@@ -17,7 +18,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *restaurantDescriptionLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *restaurantImage;
 
-@property NSString* selectedRestaurant;
 @property (strong, nonatomic) Restaurant *restaurant;
 
 - (IBAction)createButtonPressed:(UIButton *)sender;

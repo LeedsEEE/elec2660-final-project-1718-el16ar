@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A65455F01FD1B01E00059017 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A65455EF1FD1B01E00059017 /* Main.storyboard */; };
 		A665BB3C1FCC891B006BFA85 /* Food-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A665BB3B1FCC891B006BFA85 /* Food-icon@3x.png */; };
 		A665BB3E1FCC8922006BFA85 /* Food-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A665BB3D1FCC8922006BFA85 /* Food-icon@2x.png */; };
 		A665BB401FCC8928006BFA85 /* Food-icon@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = A665BB3F1FCC8928006BFA85 /* Food-icon@1x.png */; };
@@ -28,7 +29,6 @@
 		A6EDB32C1FBB41BC00E6CEE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EDB32B1FBB41BC00E6CEE0 /* main.m */; };
 		A6EDB32F1FBB41BC00E6CEE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EDB32E1FBB41BC00E6CEE0 /* AppDelegate.m */; };
 		A6EDB3321FBB41BC00E6CEE0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EDB3311FBB41BC00E6CEE0 /* ViewController.m */; };
-		A6EDB3351FBB41BC00E6CEE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6EDB3331FBB41BC00E6CEE0 /* Main.storyboard */; };
 		A6EDB3371FBB41BD00E6CEE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6EDB3361FBB41BD00E6CEE0 /* Assets.xcassets */; };
 		A6EDB33A1FBB41BD00E6CEE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6EDB3381FBB41BD00E6CEE0 /* LaunchScreen.storyboard */; };
 		A6EDB3451FBB41BE00E6CEE0 /* ProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EDB3441FBB41BE00E6CEE0 /* ProjectTests.m */; };
@@ -57,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A65455EF1FD1B01E00059017 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A665BB3B1FCC891B006BFA85 /* Food-icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Food-icon@3x.png"; sourceTree = "<group>"; };
 		A665BB3D1FCC8922006BFA85 /* Food-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Food-icon@2x.png"; sourceTree = "<group>"; };
 		A665BB3F1FCC8928006BFA85 /* Food-icon@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Food-icon@1x.png"; sourceTree = "<group>"; };
@@ -91,7 +92,6 @@
 		A6EDB32E1FBB41BC00E6CEE0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A6EDB3301FBB41BC00E6CEE0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A6EDB3311FBB41BC00E6CEE0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A6EDB3341FBB41BC00E6CEE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6EDB3361FBB41BD00E6CEE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6EDB3391FBB41BD00E6CEE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6EDB33B1FBB41BD00E6CEE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -203,8 +203,8 @@
 				A665BB411FCC8930006BFA85 /* Clock-icon@3x.png */,
 				A665BB431FCC893B006BFA85 /* Clock-icon@2x.png */,
 				A665BB451FCC8941006BFA85 /* Clock-icon@1x.png */,
-				A6EDB3331FBB41BC00E6CEE0 /* Main.storyboard */,
 				A6EDB3361FBB41BD00E6CEE0 /* Assets.xcassets */,
+				A65455EF1FD1B01E00059017 /* Main.storyboard */,
 				A6EDB3381FBB41BD00E6CEE0 /* LaunchScreen.storyboard */,
 				A6C369C71FC890E600C53B89 /* Project.xcdatamodeld */,
 				A6EDB32A1FBB41BB00E6CEE0 /* Supporting Files */,
@@ -351,11 +351,11 @@
 				A665BB3C1FCC891B006BFA85 /* Food-icon@3x.png in Resources */,
 				A6EDB33A1FBB41BD00E6CEE0 /* LaunchScreen.storyboard in Resources */,
 				A6980ABD1FCDCBFA0090CAB5 /* BellaItalia.jpeg in Resources */,
+				A65455F01FD1B01E00059017 /* Main.storyboard in Resources */,
 				A665BB3E1FCC8922006BFA85 /* Food-icon@2x.png in Resources */,
 				A6EDB3371FBB41BD00E6CEE0 /* Assets.xcassets in Resources */,
 				A665BB401FCC8928006BFA85 /* Food-icon@1x.png in Resources */,
 				A665BB421FCC8930006BFA85 /* Clock-icon@3x.png in Resources */,
-				A6EDB3351FBB41BC00E6CEE0 /* Main.storyboard in Resources */,
 				A6980AC51FCDD4180090CAB5 /* Prezzo.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,14 +432,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A6EDB3331FBB41BC00E6CEE0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A6EDB3341FBB41BC00E6CEE0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A6EDB3381FBB41BD00E6CEE0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

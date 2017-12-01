@@ -22,11 +22,16 @@
     
     
     //New object created
-    bookingEntity = [NSEntityDescription insertNewObjectForEntityForName:@"BookingEntity" inManagedObjectContext:context];
+    bookingEntity = [NSEntityDescription insertNewObjectForEntityForName:@"Bookings" inManagedObjectContext:context];
     
     bookingEntity.restaurant = [bookingEntityInfo valueForKey: @"restaurant"];
     bookingEntity.date = [bookingEntityInfo valueForKey: @"date"];
     bookingEntity.noOfGuests = [bookingEntityInfo valueForKey: @"noOfGuests"];
+    
+   // NSError *error = nil;
+  //  if (![context save:&error]) {
+   //     NSLog(@"Save Failed! %@ %@", error, [error localizedDescription]);
+  //  }
     
     return bookingEntity;
 }
