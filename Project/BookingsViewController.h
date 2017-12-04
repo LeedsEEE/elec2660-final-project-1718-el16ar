@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface BookingsViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *restaurantLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *noOfGuestsLabel;
 
 @end

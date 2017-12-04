@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="asb-AC-oUd">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="asb-AC-oUd">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -235,41 +235,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fRZ-mA-ruz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5628" y="-152.47376311844079"/>
-        </scene>
-        <!--Exisitng Reservations-->
-        <scene sceneID="RHp-U1-juH">
-            <objects>
-                <tableViewController id="Mby-Ym-SAm" customClass="BookingsTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="VPJ-kT-YFn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="NHK-q7-whE">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NHK-q7-whE" id="HCz-Pk-hRJ">
-                                    <frame key="frameInset" width="375" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="dtG-EK-DCg" kind="show" id="n4e-4N-p9s">
-                                        <nil key="action"/>
-                                    </segue>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Mby-Ym-SAm" id="LdZ-bL-LNe"/>
-                            <outlet property="delegate" destination="Mby-Ym-SAm" id="xup-HO-QHj"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Exisitng Reservations" image="Clock-icon.png" id="ciB-M6-lq8"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6HX-dW-ZoP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2938" y="586"/>
+            <point key="canvasLocation" x="5537" y="-152"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Msh-HY-xY9">
@@ -282,12 +248,79 @@
                     </tabBar>
                     <connections>
                         <segue destination="x7Q-bF-JkY" kind="relationship" relationship="viewControllers" id="DfQ-aw-G9y"/>
-                        <segue destination="Mby-Ym-SAm" kind="relationship" relationship="viewControllers" id="s5g-mQ-rK8"/>
+                        <segue destination="Ag9-CE-CMt" kind="relationship" relationship="viewControllers" id="Gc3-nG-HBR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d3O-bV-q2Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1921" y="254"/>
+        </scene>
+        <!--Existing Reservations-->
+        <scene sceneID="nOk-bN-lqg">
+            <objects>
+                <viewController id="Ag9-CE-CMt" customClass="ExistingBookingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tIf-VJ-0Vf"/>
+                        <viewControllerLayoutGuide type="bottom" id="qvf-dB-YWt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eya-ZG-PSC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tuV-an-BDS">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="517" id="3rS-ph-rOh"/>
+                                    <constraint firstAttribute="width" constant="375" id="UND-nM-bXe"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Doc-9F-bN4" style="IBUITableViewCellStyleDefault" id="JAE-KW-ddC">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JAE-KW-ddC" id="v2z-Q9-H0I">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Doc-9F-bN4">
+                                                    <frame key="frameInset" minX="15" width="345" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="dtG-EK-DCg" kind="show" id="7bz-BE-7dV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Existing Reservations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rt-5W-qSH">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="218" id="Lak-j9-dJ5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3rt-5W-qSH" firstAttribute="top" secondItem="tIf-VJ-0Vf" secondAttribute="bottom" constant="8" id="8z8-1u-W18"/>
+                            <constraint firstItem="3rt-5W-qSH" firstAttribute="centerX" secondItem="eya-ZG-PSC" secondAttribute="centerX" id="CgF-iL-XJJ"/>
+                            <constraint firstItem="tuV-an-BDS" firstAttribute="centerX" secondItem="eya-ZG-PSC" secondAttribute="centerX" id="CzI-Uc-iwh"/>
+                            <constraint firstItem="tuV-an-BDS" firstAttribute="top" secondItem="tIf-VJ-0Vf" secondAttribute="bottom" constant="81" id="y8r-Ug-F9N"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Existing Reservations" image="Clock-icon.png" id="3SU-y1-0AZ"/>
+                    <connections>
+                        <outlet property="bookingTableView" destination="tuV-an-BDS" id="P7V-ae-BcH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FOD-E5-Qdf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2912.8000000000002" y="583.3583208395803"/>
         </scene>
         <!--Bookings View Controller-->
         <scene sceneID="AFH-Fn-Yla">
@@ -301,17 +334,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Restaurant Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGf-7e-713">
-                                <frame key="frameInset" minX="71" minY="246" width="256" height="21.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="256" id="8HE-Rl-49t"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIz-nY-wSP">
-                                <frame key="frameInset" minX="71" minY="304" width="256" height="21.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIz-nY-wSP">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="256" id="nIu-gf-HeA"/>
                                 </constraints>
@@ -319,8 +342,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzm-XQ-3zY">
-                                <frame key="frameInset" minX="71" minY="379" width="256" height="21.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzm-XQ-3zY">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="256" id="M7b-8U-WHo"/>
                                 </constraints>
@@ -328,8 +350,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No. of guests" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WN-yJ-ccS">
-                                <frame key="frameInset" minX="71" minY="453" width="256" height="21.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. of guests" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WN-yJ-ccS">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="256" id="Obi-UJ-EdD"/>
                                 </constraints>
@@ -345,9 +366,8 @@
                                     <tabBarItem id="vUT-JY-l6g"/>
                                 </items>
                             </tabBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ykj-eS-CnT">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ykj-eS-CnT">
                                 <frame key="frameInset" minX="141" minY="524" width="116" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.11242632750000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <size key="titleShadowOffset" width="9" height="3"/>
@@ -363,6 +383,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGf-7e-713">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="8HE-Rl-49t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -374,10 +402,18 @@
                             <constraint firstItem="lzm-XQ-3zY" firstAttribute="top" secondItem="88W-Ng-EnJ" secondAttribute="bottom" constant="228" id="g23-VR-X1o"/>
                             <constraint firstItem="jNq-Jj-jsZ" firstAttribute="top" secondItem="88W-Ng-EnJ" secondAttribute="bottom" constant="8" id="i28-Wi-ldX"/>
                             <constraint firstItem="YIz-nY-wSP" firstAttribute="leading" secondItem="Tem-tT-MBL" secondAttribute="leadingMargin" constant="55" id="koa-lE-DdA"/>
+                            <constraint firstItem="Ykj-eS-CnT" firstAttribute="top" secondItem="88W-Ng-EnJ" secondAttribute="bottom" constant="504" id="rhG-5L-ADo"/>
                             <constraint firstItem="JGf-7e-713" firstAttribute="top" secondItem="88W-Ng-EnJ" secondAttribute="bottom" constant="95" id="vHu-t1-cYj"/>
+                            <constraint firstItem="Ykj-eS-CnT" firstAttribute="leading" secondItem="Tem-tT-MBL" secondAttribute="leadingMargin" constant="125" id="vJb-jE-HqF"/>
                             <constraint firstItem="jNq-Jj-jsZ" firstAttribute="leading" secondItem="Tem-tT-MBL" secondAttribute="leadingMargin" constant="55" id="y9c-LL-eOH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="YIz-nY-wSP" id="WWa-lL-VsY"/>
+                        <outlet property="noOfGuestsLabel" destination="7WN-yJ-ccS" id="5Il-Pz-OLZ"/>
+                        <outlet property="restaurantLabel" destination="JGf-7e-713" id="Vgd-tg-wTb"/>
+                        <outlet property="timeLabel" destination="lzm-XQ-3zY" id="LfJ-br-rW5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="stn-QS-a0W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

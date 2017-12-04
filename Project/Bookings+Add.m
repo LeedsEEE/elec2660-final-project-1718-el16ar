@@ -6,6 +6,8 @@
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
+// NSManagedObject Subclass code from https://www.youtube.com/watch?v=EGO9XBFrZE0
+
 #import "Bookings+Add.h"
 #import "AppDelegate.h"
 
@@ -28,12 +30,13 @@
     bookingEntity.date = [bookingEntityInfo valueForKey: @"date"];
     bookingEntity.noOfGuests = [bookingEntityInfo valueForKey: @"noOfGuests"];
     
-   // NSError *error = nil;
-  //  if (![context save:&error]) {
-   //     NSLog(@"Save Failed! %@ %@", error, [error localizedDescription]);
-  //  }
+    NSError *error = nil;
+    if (![context save:&error]) {
+        NSLog(@"Save Failed! %@ %@", error, [error localizedDescription]);
+    }
     
     return bookingEntity;
 }
+
 
 @end
