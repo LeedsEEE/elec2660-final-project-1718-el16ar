@@ -17,9 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    self.type = [defaults integerForKey:@"type"];
+    //selected type int read from NSUserDefaults
     
+    NSLog(@"Selected type = %li", (long)self.type);
+
     self.data = [[RestaurantDataModel alloc] init];
-    NSLog(@"%li", (long)self.SelectedType.typeSelected);
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -39,43 +44,49 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+
     NSInteger NoOfRows;
-    
-    if (section == 0) {
-        if (self.SelectedType.typeSelected == 0) {
-        //if restaurant selected is italian
+        if (self.type == 0) {
+        //if restaurant selected is Italian
+
         NoOfRows = self.data.ItalianRestaurants.count;
-            
-        }else if(self.SelectedType.typeSelected == 1) {
+        //counts number of Italian elements
+                 }
+    else if(self.type == 1) {
+        //if restaurant selected is Greek
+        
             NoOfRows = self.data.GreekRestaurants.count;
+        //counts number of Greek elements
+
         }
-    }
-    
     return NoOfRows;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RestaurantCell" forIndexPath:indexPath];
     
-    if (self.SelectedType.typeSelected == 0) {
-        
-    if(indexPath.section ==0) {
-        //loop for each element in array
-         Restaurant *tempRestaurant = [self.data.ItalianRestaurants objectAtIndex:indexPath.row];
+    if (self.type == 0) {
+        //if restaurant selected is Italian
+
+        Restaurant *tempRestaurant = [self.data.ItalianRestaurants objectAtIndex:indexPath.row];
             //temporary storage of data from array
             cell.textLabel.text = tempRestaurant.restaurantName;
             //title entered for each entry
+        
     }
-        }else if (self.SelectedType.typeSelected == 1) {
-            if(indexPath.section ==0) {
+    else if(self.type == 1) {
+        //if restaurant selected is Greek
+        
             Restaurant *tempRestaurant = [self.data.GreekRestaurants objectAtIndex:indexPath.row];
             //temporary storage of data from array
             cell.textLabel.text = tempRestaurant.restaurantName;
             //title entered for each entry
+        
             }
-    }
     return cell;
+
 }
 
 
@@ -127,19 +138,20 @@
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
-        if (indexPath.section == 0) {
-            
-            if (_SelectedType.typeSelected == 0) {
+            if (self.type == 0) {
+                //if restaurant selected is Italian
+                
                 Restaurant *tempRestaurant = [self.data.ItalianRestaurants objectAtIndex:indexPath.row];
                 destinationViewController.restaurant = tempRestaurant;
                 
-            }else if (_SelectedType.typeSelected == 1) {
+            }else if (self.type == 1) {
+                //if restaurant selected is Greek
+                
                 Restaurant *tempRestaurant = [self.data.GreekRestaurants objectAtIndex:indexPath.row];
                 destinationViewController.restaurant = tempRestaurant;
             }
 
         }
     }
-}
 
 @end
