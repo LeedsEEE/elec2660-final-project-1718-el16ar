@@ -12,5 +12,11 @@
 @interface RestaurantDataModel : NSObject
 @property (strong, nonatomic) NSMutableArray *ItalianRestaurants;
 @property (strong, nonatomic) NSMutableArray *GreekRestaurants;
+@property (strong, nonatomic) NSMutableArray *ChineseRestaurants;
+@property (strong, nonatomic) NSMutableArray *IndianRestaurants;
+@property (strong, nonatomic) NSMutableArray *ThaiRestaurants;
+
+
+
 
 @end

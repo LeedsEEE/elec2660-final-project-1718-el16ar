@@ -13,7 +13,6 @@
 
 @interface RestaurantsTableViewController : UITableViewController
 @property (nonatomic, strong) RestaurantDataModel *data;
-@property (nonatomic, strong) SelectTypeViewController *SelectedType;
 @property NSInteger type;
 
 @end
