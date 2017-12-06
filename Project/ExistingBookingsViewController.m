@@ -5,23 +5,30 @@
 //  Created by Andrew Roy [el16ar] on 04/12/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
-/*
+
 #import "ExistingBookingsViewController.h"
-#import "Bookings+CoreDataClass.h"
 
 @interface ExistingBookingsViewController ()
 
-@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
+//@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
 
 @end
 
-@implementation ExistingBookingsViewController
+@implementation ExistingBookingsViewController 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.data = [[BookingDataModel alloc] init];
     
+  //  self.bookingsList = [[NSMutableArray alloc] init];
+   // [self.bookingsList addObject:@"Example1"];
+   // [self.bookingsList addObject:@"Example2"];
+   // [self.bookingsList addObject:@"Example3"];
+    
+  //  NSLog(@"%ld", self.bookingsList.count);
+   // NSLog(@"%@", self.bookingsList objectAtIndex:0);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,94 +36,38 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return [[self.fetchedResultsController sections] count];
-
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)bookingTableView {
+    return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-        id <NSFetchedResultsSectionInfo> sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:section];
-        return [sectionInfo numberOfObjects];
+- (NSInteger)tableView:(UITableView *)bookingTableView numberOfRowsInSection:(NSInteger)section {
+    return 2;
 }
 
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)bookingTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [bookingTableView dequeueReusableCellWithIdentifier:@"BookingsCell" forIndexPath:indexPath];
     
-Bookings *bookings = [self.fetchedResultsController objectAtIndexPath:indexPath];
-//cell.textLabel.text = bookingEntity.restaurantName;
+    Booking *tempBooking = [self.data.ExistingBookings objectAtIndex:indexPath.row];
+    //temporary storage of data from array
+    cell.textLabel.text = tempBooking.restaurant;
+    //title entered for each entry
     
+    return cell;
     
 }
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-
-{
-
-    NSArray *fetchedObjects;
-    NSManagedObjectContext *context = [self managedObjectContext];
-    NSFetchRequest *fetch = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"InstallProject"  inManagedObjectContext: context];
-    [fetch setEntity:entityDescription];
-    [fetch setPredicate:[NSPredicate predicateWithFormat:@"(ANY ProjID contains[cd] %@)",projIDString]];
-    NSError * error = nil;
-    fetchedObjects = [context executeFetchRequest:fetch error:&error];
-    
-    if([fetchedObjects count] == 1)
-        return [fetchedObjects objectAtIndex:0];
-    else
-        return nil;
-
-    
-    - (NSFetchedResultsController *)fetchedResultsController {
-      if (_fetchedResultsController != nil) {
-           return _fetchedResultsController;
-       }
-        
-        // Create and configure a fetch request with the Booking entity.
-        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-        NSEntityDescription *bookings = [NSEntityDescription entityForName:@"Bookings" inManagedObjectContext:self.context];
-        [fetchRequest setEntity:bookings];
-        
-        // Create and initialize the fetch results controller.
-        _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.context sectionNameKeyPath:@"artist" cacheName:@"Root"];
-        _fetchedResultsController.delegate = self;
-        
-        // Memory management
-        
-        return _fetchedResultsController;
-    }
-    
+   /*
     - (void)controllerWillChangeContent:(NSFetchedResultsController *)controller
     {
-        // The fetch controller is about to start sending change notifications, so prepare the table view for updates.
-        [self.tableView beginUpdates];
+        
     }
-    
-    
+    */
+
     - (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath
     {
-        UITableView *tableView = self.tableView;
         
-        switch(type) {
-                
-            case NSFetchedResultsChangeInsert:
-                [tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
-                break;
-                
-            case NSFetchedResultsChangeDelete:
-                [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-                break;
-                
-            case NSFetchedResultsChangeUpdate:
-                [self configureCell:[tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
-                break;
-                
-            case NSFetchedResultsChangeMove:
-                [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-                [tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
-                break;
-        }
     }
-    
+
+/*
     - (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type
     {
         switch(type) {
@@ -130,7 +81,7 @@ Bookings *bookings = [self.fetchedResultsController objectAtIndexPath:indexPath]
                 break;
         }
     }
-    
+ 
     
     - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
     {
@@ -139,6 +90,7 @@ Bookings *bookings = [self.fetchedResultsController objectAtIndexPath:indexPath]
     }
 }
     
+*/
 
 #pragma mark - Navigation
 
@@ -150,4 +102,4 @@ Bookings *bookings = [self.fetchedResultsController objectAtIndexPath:indexPath]
 
 
 @end
-*/
+

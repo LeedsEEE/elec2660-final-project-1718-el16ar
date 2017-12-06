@@ -67,7 +67,7 @@
                             <constraint firstItem="LWT-e6-M6c" firstAttribute="centerX" secondItem="eFK-0M-D5F" secondAttribute="centerX" id="vbl-hL-zEa"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Create Reservation" id="gNl-UC-7ES"/>
+                    <tabBarItem key="tabBarItem" title="Create Reservation" image="Food-icon.png" selectedImage="Food-icon" id="gNl-UC-7ES"/>
                     <navigationItem key="navigationItem" id="y3T-g2-9BU"/>
                     <connections>
                         <outlet property="RestaurantTypePicker" destination="wko-Cn-jaf" id="bNa-6B-hhy"/>
@@ -81,7 +81,7 @@
         <scene sceneID="zmK-w5-RbV">
             <objects>
                 <navigationController id="x7Q-bF-JkY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Create Reservation" image="Food-icon.png" id="Qsl-Nd-ga9"/>
+                    <tabBarItem key="tabBarItem" title="Create Reservation" image="Food-icon@1x" id="Qsl-Nd-ga9"/>
                     <navigationItem key="navigationItem" id="jAf-Co-tCB"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gex-N1-Qu7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -108,11 +108,11 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zv1-9h-dl1" id="NoB-dm-gK5">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6l2-Lt-6h4">
-                                            <frame key="frameInset" minX="15" width="345" height="43.5"/>
+                                            <frame key="frameInset" minX="15" width="345" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -238,6 +238,23 @@
             </objects>
             <point key="canvasLocation" x="5434" y="-152"/>
         </scene>
+        <!--Existing Reservations-->
+        <scene sceneID="VMe-p1-v5t">
+            <objects>
+                <navigationController id="wj7-P0-X28" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Existing Reservations" image="Clock-icon.png" id="SNT-Dv-Sdr"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="knm-HF-Ui0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ag9-CE-CMt" kind="relationship" relationship="rootViewController" id="NBA-nQ-vWQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3bl-Ea-1OG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2958" y="581"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Msh-HY-xY9">
             <objects>
@@ -249,16 +266,17 @@
                     </tabBar>
                     <connections>
                         <segue destination="x7Q-bF-JkY" kind="relationship" relationship="viewControllers" id="DfQ-aw-G9y"/>
-                        <segue destination="Ag9-CE-CMt" kind="relationship" relationship="viewControllers" id="Gc3-nG-HBR"/>
+                        <segue destination="wj7-P0-X28" kind="relationship" relationship="viewControllers" id="EJV-Fl-IeZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d3O-bV-q2Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1921" y="254"/>
+            <point key="canvasLocation" x="1924" y="260"/>
         </scene>
         <!--Existing Reservations-->
         <scene sceneID="nOk-bN-lqg">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FOD-E5-Qdf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Ag9-CE-CMt" customClass="ExistingBookingsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tIf-VJ-0Vf"/>
@@ -275,24 +293,24 @@
                                     <constraint firstAttribute="width" constant="375" id="UND-nM-bXe"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Doc-9F-bN4" detailTextLabel="RBK-Ri-uuR" style="IBUITableViewCellStyleValue2" id="JAE-KW-ddC">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BookingsCell" textLabel="Doc-9F-bN4" detailTextLabel="RBK-Ri-uuR" style="IBUITableViewCellStyleValue1" id="JAE-KW-ddC">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JAE-KW-ddC" id="v2z-Q9-H0I">
-                                            <frame key="frameInset" width="375" height="44"/>
+                                            <frame key="frameInset" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Doc-9F-bN4">
-                                                    <frame key="frameInset" minX="15" minY="14" width="91" height="16"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Doc-9F-bN4">
+                                                    <frame key="frameInset" minX="15" minY="11" width="34" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RBK-Ri-uuR">
-                                                    <frame key="frameInset" minX="112" minY="14" width="35" height="16"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RBK-Ri-uuR">
+                                                    <frame key="frameInset" minX="316" minY="11" width="44" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -303,6 +321,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ag9-CE-CMt" id="rLw-3r-Sjp"/>
+                                    <outlet property="delegate" destination="Ag9-CE-CMt" id="L8f-qX-fyJ"/>
+                                </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Existing Reservations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rt-5W-qSH">
                                 <constraints>
@@ -318,17 +340,17 @@
                             <constraint firstItem="3rt-5W-qSH" firstAttribute="top" secondItem="tIf-VJ-0Vf" secondAttribute="bottom" constant="8" id="8z8-1u-W18"/>
                             <constraint firstItem="3rt-5W-qSH" firstAttribute="centerX" secondItem="eya-ZG-PSC" secondAttribute="centerX" id="CgF-iL-XJJ"/>
                             <constraint firstItem="tuV-an-BDS" firstAttribute="centerX" secondItem="eya-ZG-PSC" secondAttribute="centerX" id="CzI-Uc-iwh"/>
-                            <constraint firstItem="tuV-an-BDS" firstAttribute="top" secondItem="tIf-VJ-0Vf" secondAttribute="bottom" constant="81" id="y8r-Ug-F9N"/>
+                            <constraint firstItem="tuV-an-BDS" firstAttribute="top" secondItem="tIf-VJ-0Vf" secondAttribute="bottom" constant="44" id="zlC-oV-cln"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Existing Reservations" image="Clock-icon.png" id="3SU-y1-0AZ"/>
+                    <tabBarItem key="tabBarItem" title="Existing Reservations" image="Clock-icon" id="3SU-y1-0AZ"/>
+                    <navigationItem key="navigationItem" id="7Kg-nX-zap"/>
                     <connections>
                         <outlet property="bookingTableView" destination="tuV-an-BDS" id="P7V-ae-BcH"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FOD-E5-Qdf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2958" y="582"/>
+            <point key="canvasLocation" x="3768.8000000000002" y="580.65967016491754"/>
         </scene>
         <!--Bookings View Controller-->
         <scene sceneID="AFH-Fn-Yla">
@@ -344,15 +366,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIz-nY-wSP">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="256" id="nIu-gf-HeA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzm-XQ-3zY">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="256" id="M7b-8U-WHo"/>
+                                    <constraint firstAttribute="width" constant="281" id="Nh9-v1-GfY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
@@ -374,16 +388,18 @@
                                     <tabBarItem id="vUT-JY-l6g"/>
                                 </items>
                             </tabBar>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ykj-eS-CnT">
-                                <frame key="frameInset" minX="141" minY="524" width="116" height="46"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ykj-eS-CnT">
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.11242632750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="159" id="Op5-Fh-0Km"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <size key="titleShadowOffset" width="9" height="3"/>
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Booking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNq-Jj-jsZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reservation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNq-Jj-jsZ">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="256" id="lAa-y6-c53"/>
                                 </constraints>
@@ -399,21 +415,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzm-XQ-3zY">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="M7b-8U-WHo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="jNq-Jj-jsZ" firstAttribute="centerX" secondItem="Tem-tT-MBL" secondAttribute="centerX" id="0UA-Rz-qcG"/>
                             <constraint firstItem="YIz-nY-wSP" firstAttribute="top" secondItem="88W-Ng-EnJ" secondAttribute="bottom" constant="153" id="6Zd-uH-23y"/>
                             <constraint firstItem="7WN-yJ-ccS" firstAttribute="leading" secondItem="Tem-tT-MBL" secondAttribute="leadingMargin" constant="55" id="8nJ-nq-EeX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lzm-XQ-3zY" secondAttribute="trailing" constant="32" id="BNi-tR-UmT"/>
                             <constraint firstItem="7WN-yJ-ccS" firstAttribute="top" secondItem="88W-Ng-EnJ" secondAttribute="bottom" constant="302" id="Bx9-ge-GEB"/>
-                            <constraint firstItem="JGf-7e-713" firstAttribute="leading" secondItem="Tem-tT-MBL" secondAttribute="leadingMargin" constant="55" id="Nfm-xY-tpw"/>
+                            <constraint firstItem="JGf-7e-713" firstAttribute="centerX" secondItem="Tem-tT-MBL" secondAttribute="centerX" id="Oxk-j3-ff0"/>
+                            <constraint firstItem="lzm-XQ-3zY" firstAttribute="centerX" secondItem="Tem-tT-MBL" secondAttribute="centerX" id="PIG-hL-aOr"/>
+                            <constraint firstItem="Ykj-eS-CnT" firstAttribute="centerX" secondItem="Tem-tT-MBL" secondAttribute="centerX" id="YcU-se-Bb8"/>
                             <constraint firstItem="lzm-XQ-3zY" firstAttribute="top" secondItem="88W-Ng-EnJ" secondAttribute="bottom" constant="228" id="g23-VR-X1o"/>
                             <constraint firstItem="jNq-Jj-jsZ" firstAttribute="top" secondItem="88W-Ng-EnJ" secondAttribute="bottom" constant="8" id="i28-Wi-ldX"/>
-                            <constraint firstItem="YIz-nY-wSP" firstAttribute="leading" secondItem="Tem-tT-MBL" secondAttribute="leadingMargin" constant="55" id="koa-lE-DdA"/>
                             <constraint firstItem="Ykj-eS-CnT" firstAttribute="top" secondItem="88W-Ng-EnJ" secondAttribute="bottom" constant="504" id="rhG-5L-ADo"/>
                             <constraint firstItem="JGf-7e-713" firstAttribute="top" secondItem="88W-Ng-EnJ" secondAttribute="bottom" constant="95" id="vHu-t1-cYj"/>
-                            <constraint firstItem="Ykj-eS-CnT" firstAttribute="leading" secondItem="Tem-tT-MBL" secondAttribute="leadingMargin" constant="125" id="vJb-jE-HqF"/>
-                            <constraint firstItem="jNq-Jj-jsZ" firstAttribute="leading" secondItem="Tem-tT-MBL" secondAttribute="leadingMargin" constant="55" id="y9c-LL-eOH"/>
+                            <constraint firstItem="YIz-nY-wSP" firstAttribute="centerX" secondItem="Tem-tT-MBL" secondAttribute="centerX" id="yas-h2-fqy"/>
                         </constraints>
                     </view>
                     <connections>
@@ -425,7 +449,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="stn-QS-a0W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3769" y="583"/>
+            <point key="canvasLocation" x="4588" y="580.65967016491754"/>
         </scene>
         <!--Booking Create View Controller-->
         <scene sceneID="g2w-OV-W4A">
@@ -524,9 +548,27 @@
             </objects>
             <point key="canvasLocation" x="6266" y="-152"/>
         </scene>
+        <!--Create Reservation-->
+        <scene sceneID="cBe-uI-OIR">
+            <objects>
+                <navigationController id="iql-hB-0lJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Create Reservation" image="Food-icon@1x" id="5XF-5o-GNb"/>
+                    <navigationItem key="navigationItem" id="kZM-1G-gKt"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OjJ-bW-n2r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EhE-3H-K0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2958" y="-152"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Clock-icon" width="25" height="25"/>
         <image name="Clock-icon.png" width="25" height="25"/>
-        <image name="Food-icon.png" width="25" height="25"/>
+        <image name="Food-icon" width="25" height="25"/>
+        <image name="Food-icon.png" width="1024" height="669"/>
+        <image name="Food-icon@1x" width="25" height="25"/>
     </resources>
 </document>

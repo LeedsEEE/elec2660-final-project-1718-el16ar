@@ -13,5 +13,6 @@
 
 @property (weak, nonatomic) IBOutlet UIPickerView *RestaurantTypePicker;
 @property NSInteger typeSelected;
+
 @end
 
