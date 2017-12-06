@@ -35,12 +35,45 @@
 }
 
 - (IBAction)ConfirmButtonPressed:(UIButton *)sender {
+    
+
+    [NSArray arrayWithObjects: @"key1", @"key2", @"key3", @"key4", @"key5", nil ];
+    
     NSLog(@"%@", self.restaurant.restaurantName);
-   NSDictionary *bookingInfo = @{@"restaurant": self.restaurant.restaurantName,
+ /*  NSDictionary *bookingInfo = @{@"restaurant": self.restaurant.restaurantName,
                                @"date": self.DatePicker.date ,
-                              @"noOfGuests": self.NoOfGuests.text};
+                              @"noOfGuests": self.NoOfGuests};
     
     self.textOutput.text = [Bookings addBookingEntityInfoFromDictionary:bookingInfo].description;
+    
+    */
+    
+ //  NSUserDefaults *StoreNum = [NSUserDefaults standardUserDefaults];
+  // [StoreNum setInteger:self.NoOfGuests.text.integerValue forKey:@"Num"];
+  //[StoreNum synchronize];
+
+    NSString *restaurantName = self.restaurant.restaurantName;
+    NSString *testRestaurant;
+    
+    
+    NSUserDefaults *StoreRestaurant = [NSUserDefaults standardUserDefaults];
+    
+    //StoreRestaurant setObject:@"" forKey:@"key1"];
+    
+    testRestaurant = [StoreRestaurant stringForKey:@"key1"];
+    
+ //   if (StoreRestaurant.objectFor()) ){
+        NSLog(@"EMPTY KEY");
+    }
+
+    
+    StoreRestaurant setObject:restaurantName forKey:@"Restaurant"];
+    StoreRestaurant synchronize];
+    
+   // NSUserDefaults *StoreDate = [NSUserDefaults standardUserDefaults];
+  //  [StoreDate setObject:self.restaurant.restaurantName forKey:@"Restaurant"];
+   // [StoreRestaurant synchronize];
+
 }
 @end
 

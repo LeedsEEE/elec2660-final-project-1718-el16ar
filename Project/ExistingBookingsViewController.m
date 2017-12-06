@@ -7,8 +7,6 @@
 //
 
 #import "ExistingBookingsViewController.h"
-#import "AppDelegate.h"
-#import "AppDelegate.m"
 
 @interface ExistingBookingsViewController ()
 
@@ -26,7 +24,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.data = [[BookingDataModel alloc] init];
-    
+   /*
     AppDelegate *appDelegate =[[UIApplication sharedApplication]delegate];
    NSManagedObjectContext *context =[appDelegate managedObjectContext];
     NSError *error;
@@ -48,21 +46,12 @@
     
     for (NSManagedObject *player in fetchedObjects) {
         
-        NSLog(@"Name: %@", [player valueForKey:@"name"]);
-        NSLog(@"Surname: %@", [player valueForKey:@"surname"]);
-        NSLog(@"Address: %@", [player valueForKey:@"address"]);
-        NSLog(@"Email: %@", [player valueForKey:@"email"]);
-        NSLog(@"Phone: %@", [player valueForKey:@"phone"]);
-        NSLog(@"City: %@", [player valueForKey:@"city"]);
-        NSLog(@"Country: %@", [player valueForKey:@"country"]);
-        NSLog(@"Store: %@", [player valueForKey:@"store"]);
-        NSLog(@"Age: %@", [player valueForKey:@"age"]);
-        NSLog(@"Gender: %@", [player valueForKey:@"gender"]);
-        NSLog(@"Time: %@", [player valueForKey:@"time"]);
-        
+        NSLog(@"Restaurant: %@", [player valueForKey:@"restaurant"]);
+        NSLog(@"Date: %@", [player valueForKey:@"date"]);
+        NSLog(@"GuestsNum: %@", [player valueForKey:@"noOfGuests"]);
     }
     
-    
+    */
   //  self.bookingsList = [[NSMutableArray alloc] init];
    // [self.bookingsList addObject:@"Example1"];
    // [self.bookingsList addObject:@"Example2"];

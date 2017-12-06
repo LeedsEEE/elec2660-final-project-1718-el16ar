@@ -13,6 +13,9 @@
 {
     self = [super init];
     if (self) {
+        
+#pragma mark - Italian Restaurants
+
         self.ItalianRestaurants = [NSMutableArray array];
         //Italian restaurants array
         
@@ -48,6 +51,8 @@
         primo.restaurantDescription = @"Italian and Mediterranean staples in a stylish modern restaurant with booth and terrace seating.";
         [self.ItalianRestaurants addObject:primo];
 
+#pragma mark - Greek Restaurants
+        
         self.GreekRestaurants = [NSMutableArray array];
         //Greek restaurants array
         
@@ -83,6 +88,8 @@
         oliveBranch.restaurantDescription = @"Turkish and Mediterranean flavours in a bijou restaurant with wood panelling, plus pavement tables.";
         [self.GreekRestaurants addObject:oliveBranch];
         
+#pragma mark - Chinese Restaurants
+        
         self.ChineseRestaurants = [NSMutableArray array];
         //Chinese restaurants array 
         
@@ -109,6 +116,8 @@
         orientalCity.restaurantImage = @"";
         orientalCity.restaurantDescription = @"Extensive Chinese menu with lunchtime dim sum served in an elegant dining room and Halal options.";
         [self.ChineseRestaurants addObject:orientalCity];
+        
+#pragma mark - Indian Restaurants
         
         self.IndianRestaurants = [NSMutableArray array];
         //Indian restaurants
@@ -137,10 +146,12 @@
         tharavadu.restaurantDescription = @"Indian cuisine from Kerala in a modern venue with floor-to-ceiling windows and polished wood floors.";
         [self.IndianRestaurants addObject:tharavadu];
         
+        
+#pragma mark - Thai Restaurants
+        
         self.ThaiRestaurants = [NSMutableArray array];
         //Thai restaurants
         
-       
         Restaurant *thaiEdge = [[Restaurant alloc] init];
         thaiEdge.restaurantName = @"Thai Edge Restaurant";
         thaiEdge.restaurantAddress = @"7 Calverley St, Leeds LS1 3DA";

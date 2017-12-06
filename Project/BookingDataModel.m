@@ -14,12 +14,20 @@
     self = [super init];
     if (self) {
 
+        
         self.ExistingBookings = [NSMutableArray array];
         //Italian restaurants array
         
+        
+        NSUserDefaults *StoreRestaurant = [NSUserDefaults standardUserDefaults];
+        self.Restaurant = [StoreRestaurant stringForKey:@"Restaurant"];
+        
+     //   NSUserDefaults *StoreNum = [NSUserDefaults standardUserDefaults];
+//self.noOfUsers = [StoreNum integerForKey:@"Num"];
+        
         Booking *ex1 = [[Booking alloc] init];
-        ex1.restaurant = @"Bella Italia";
-        ex1.noOfGuests = @"2";
+        ex1.restaurant = self.Restaurant;
+        ex1.noOfGuests = @"4";
         [self.ExistingBookings addObject:ex1];
 
         Booking *ex2 = [[Booking alloc] init];

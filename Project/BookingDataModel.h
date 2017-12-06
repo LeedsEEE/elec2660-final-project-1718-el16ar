@@ -13,4 +13,8 @@
 
 @property (strong, nonatomic) NSMutableArray *ExistingBookings;
 
+@property (strong, nonatomic) NSString *Restaurant;
+@property NSInteger *noOfUsers;
+
+
 @end

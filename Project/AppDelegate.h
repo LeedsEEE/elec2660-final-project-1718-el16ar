@@ -13,7 +13,7 @@
 @property (strong, nonatomic) UIWindow *window;
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 
-+ (AppDelegate *) sharedAppDelegate;
+//+ (AppDelegate *) sharedAppDelegate;
 
 - (void)saveContext;
 
