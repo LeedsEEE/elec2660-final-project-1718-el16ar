@@ -48,16 +48,34 @@
     NSInteger NoOfRows;
         if (self.type == 0) {
         //if restaurant selected is Italian
-
+            
         NoOfRows = self.data.ItalianRestaurants.count;
         //counts number of Italian elements
-                 }
-    else if(self.type == 1) {
+            
+                 } else if(self.type == 1) {
         //if restaurant selected is Greek
         
             NoOfRows = self.data.GreekRestaurants.count;
         //counts number of Greek elements
+            
+         } else if(self.type == 2) {
+        //if restaurant selected is Chinese
 
+        NoOfRows = self.data.ChineseRestaurants.count;
+        //counts number of Chinese elements
+            
+         } else if(self.type == 3) {
+        //if restaurant selected is Indian
+
+        NoOfRows = self.data.IndianRestaurants.count;
+        //counts number of Indian elements   
+            
+        } else if(self.type == 4) {
+        //if restaurant selected is Thai
+
+        NoOfRows = self.data.ThaiRestaurants.count;
+        //counts number of Thai elements   
+            
         }
     return NoOfRows;
 }
@@ -75,11 +93,34 @@
             cell.textLabel.text = tempRestaurant.restaurantName;
             //title entered for each entry
         
-    }
-    else if(self.type == 1) {
+    } else if(self.type == 1) {
         //if restaurant selected is Greek
         
             Restaurant *tempRestaurant = [self.data.GreekRestaurants objectAtIndex:indexPath.row];
+            //temporary storage of data from array
+            cell.textLabel.text = tempRestaurant.restaurantName;
+            //title entered for each entry
+        
+      } else if(self.type == 2) {
+        //if restaurant selected is Chinese
+        
+            Restaurant *tempRestaurant = [self.data.ChineseRestaurants objectAtIndex:indexPath.row];
+            //temporary storage of data from array
+            cell.textLabel.text = tempRestaurant.restaurantName;
+            //title entered for each entry
+        
+        } else if(self.type == 3) {
+        //if restaurant selected is Indian
+        
+            Restaurant *tempRestaurant = [self.data.IndianRestaurants objectAtIndex:indexPath.row];
+            //temporary storage of data from array
+            cell.textLabel.text = tempRestaurant.restaurantName;
+            //title entered for each entry
+        
+         } else if(self.type == 4) {
+        //if restaurant selected is Thai
+        
+            Restaurant *tempRestaurant = [self.data.ThaiRestaurants objectAtIndex:indexPath.row];
             //temporary storage of data from array
             cell.textLabel.text = tempRestaurant.restaurantName;
             //title entered for each entry
@@ -148,6 +189,24 @@
                 //if restaurant selected is Greek
                 
                 Restaurant *tempRestaurant = [self.data.GreekRestaurants objectAtIndex:indexPath.row];
+                destinationViewController.restaurant = tempRestaurant;
+                
+             }else if (self.type == 2) {
+                //if restaurant selected is Chinese
+                
+                Restaurant *tempRestaurant = [self.data.ChineseRestaurants objectAtIndex:indexPath.row];
+                destinationViewController.restaurant = tempRestaurant;
+                
+               }else if (self.type == 3) {
+                //if restaurant selected is Indian
+                
+                Restaurant *tempRestaurant = [self.data.IndianRestaurants objectAtIndex:indexPath.row];
+                destinationViewController.restaurant = tempRestaurant;
+                
+               }else if (self.type == 4) {
+                //if restaurant selected is Thai
+                
+                Restaurant *tempRestaurant = [self.data.ThaiRestaurants objectAtIndex:indexPath.row];
                 destinationViewController.restaurant = tempRestaurant;
             }
 
