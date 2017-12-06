@@ -14,6 +14,24 @@
 
 @implementation AppDelegate
 
+//static AppDelegate *sharedInstance;
+/*
+- (id) init {
+
+    if(sharedInstance){
+        NSLog()
+    }
+    
+    [super init];
+    
+    sharedInstance = self;
+    
+    return self;
+}
+*/
+//+ (AppDelegate *)sharedAppDelegate {
+//    return sharedInstance;
+//}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.

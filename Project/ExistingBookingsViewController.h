@@ -13,11 +13,19 @@
 
 @interface ExistingBookingsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate>
 
-@property (weak, nonatomic) IBOutlet UITableView *bookingTableView;
-@property (nonatomic, strong) BookingDataModel *data;
-@property (strong, nonatomic) NSManagedObjectContext *context;
+{
+    NSFetchedResultsController *fetchedResultsController;
+    NSManagedObjectContext *managedObjectContext;
+    NSArray *existingBookings;
+}
 
-- (NSFetchedResultsController *): fetchedResultsController;
+@property (weak, nonatomic) IBOutlet UITableView *bookingTableView;
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic,strong)  NSArray *fetchedObjects;
+
+
+@property (nonatomic, strong) BookingDataModel *data;
 
 
 @end

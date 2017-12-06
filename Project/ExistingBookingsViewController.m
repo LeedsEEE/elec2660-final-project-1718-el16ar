@@ -7,6 +7,8 @@
 //
 
 #import "ExistingBookingsViewController.h"
+#import "AppDelegate.h"
+#import "AppDelegate.m"
 
 @interface ExistingBookingsViewController ()
 
@@ -15,12 +17,51 @@
 @end
 
 @implementation ExistingBookingsViewController 
+@synthesize managedObjectContext;
+@synthesize fetchedResultsController;
+@synthesize fetchedObjects;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
     self.data = [[BookingDataModel alloc] init];
+    
+    AppDelegate *appDelegate =[[UIApplication sharedApplication]delegate];
+   NSManagedObjectContext *context =[appDelegate managedObjectContext];
+    NSError *error;
+    
+    if (managedObjectContext != nil) {
+        if ([managedObjectContext hasChanges] &&[managedObjectContext save:&error]) {
+            NSLog(@"Unresolved error %@,%@",error, [error userInfo]);
+            abort();
+        }
+    }
+
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription
+                                   entityForName:@"BookingEntity" inManagedObjectContext:context];
+
+    [fetchRequest setEntity:entity];
+    fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
+    // Test reading core data
+    
+    for (NSManagedObject *player in fetchedObjects) {
+        
+        NSLog(@"Name: %@", [player valueForKey:@"name"]);
+        NSLog(@"Surname: %@", [player valueForKey:@"surname"]);
+        NSLog(@"Address: %@", [player valueForKey:@"address"]);
+        NSLog(@"Email: %@", [player valueForKey:@"email"]);
+        NSLog(@"Phone: %@", [player valueForKey:@"phone"]);
+        NSLog(@"City: %@", [player valueForKey:@"city"]);
+        NSLog(@"Country: %@", [player valueForKey:@"country"]);
+        NSLog(@"Store: %@", [player valueForKey:@"store"]);
+        NSLog(@"Age: %@", [player valueForKey:@"age"]);
+        NSLog(@"Gender: %@", [player valueForKey:@"gender"]);
+        NSLog(@"Time: %@", [player valueForKey:@"time"]);
+        
+    }
+    
     
   //  self.bookingsList = [[NSMutableArray alloc] init];
    // [self.bookingsList addObject:@"Example1"];
