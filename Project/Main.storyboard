@@ -276,7 +276,6 @@
         <!--Existing Reservations-->
         <scene sceneID="nOk-bN-lqg">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FOD-E5-Qdf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Ag9-CE-CMt" customClass="ExistingBookingsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tIf-VJ-0Vf"/>
@@ -349,6 +348,7 @@
                         <outlet property="bookingTableView" destination="tuV-an-BDS" id="P7V-ae-BcH"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FOD-E5-Qdf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3768.8000000000002" y="580.65967016491754"/>
         </scene>
@@ -476,18 +476,6 @@
                                     <action selector="NoOfGuestStepper:" destination="D6q-tR-HYa" eventType="valueChanged" id="qR8-m3-YRH"/>
                                 </connections>
                             </stepper>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c2m-2G-C47">
-                                <frame key="frameInset" minX="168" minY="389" width="79" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="79" id="7OY-a8-6Ey"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="NoOfGuestsEdit:" destination="D6q-tR-HYa" eventType="editingDidEnd" id="0qR-Rd-vGS"/>
-                                </connections>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WG6-2q-KJa">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="249" id="Pnm-tF-eZO"/>
@@ -519,13 +507,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djg-01-ILa">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="W8T-eD-TLA"/>
+                                    <constraint firstAttribute="height" constant="29" id="r0l-w6-f7t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="WG6-2q-KJa" firstAttribute="top" secondItem="fDF-A1-niB" secondAttribute="bottom" constant="502" id="6H2-qZ-NaC"/>
-                            <constraint firstItem="c2m-2G-C47" firstAttribute="leading" secondItem="DYv-SW-r2n" secondAttribute="leadingMargin" constant="154" id="9hx-hD-CiB"/>
+                            <constraint firstItem="djg-01-ILa" firstAttribute="top" secondItem="fDF-A1-niB" secondAttribute="bottom" constant="325" id="G1T-IV-ean"/>
                             <constraint firstItem="XK1-La-URQ" firstAttribute="centerX" secondItem="DYv-SW-r2n" secondAttribute="centerX" id="HKF-hH-5v2"/>
-                            <constraint firstItem="c2m-2G-C47" firstAttribute="top" secondItem="fDF-A1-niB" secondAttribute="bottom" constant="325" id="Ieh-gN-rqX"/>
                             <constraint firstItem="8eP-Ol-6Nr" firstAttribute="top" secondItem="fDF-A1-niB" secondAttribute="bottom" constant="366" id="IqQ-eC-lp3"/>
                             <constraint firstItem="8eP-Ol-6Nr" firstAttribute="centerX" secondItem="DYv-SW-r2n" secondAttribute="centerX" id="MeW-gS-jRE"/>
                             <constraint firstItem="viB-Dt-8kg" firstAttribute="leading" secondItem="DYv-SW-r2n" secondAttribute="leadingMargin" constant="249" id="VHt-mw-gm5"/>
@@ -533,6 +529,7 @@
                             <constraint firstItem="bcy-4g-1VC" firstAttribute="top" secondItem="fDF-A1-niB" secondAttribute="bottom" constant="329" id="cfg-EK-axr"/>
                             <constraint firstItem="viB-Dt-8kg" firstAttribute="top" secondItem="fDF-A1-niB" secondAttribute="bottom" constant="325" id="fNx-Dz-QNf"/>
                             <constraint firstItem="XK1-La-URQ" firstAttribute="top" secondItem="fDF-A1-niB" secondAttribute="bottom" constant="101" id="gtR-es-CaI"/>
+                            <constraint firstItem="djg-01-ILa" firstAttribute="leading" secondItem="DYv-SW-r2n" secondAttribute="leadingMargin" constant="177" id="jAD-tG-6T0"/>
                             <constraint firstItem="HDw-ju-EOb" firstAttribute="top" secondItem="fDF-A1-niB" secondAttribute="bottom" constant="8" id="la5-1Q-MDu"/>
                             <constraint firstItem="WG6-2q-KJa" firstAttribute="centerX" secondItem="DYv-SW-r2n" secondAttribute="centerX" id="oig-8d-0rZ"/>
                             <constraint firstAttribute="leadingMargin" secondItem="bcy-4g-1VC" secondAttribute="leading" id="tUf-xu-Wly"/>
@@ -540,13 +537,13 @@
                     </view>
                     <connections>
                         <outlet property="DatePicker" destination="XK1-La-URQ" id="NCh-B7-kgV"/>
-                        <outlet property="NoOfGuests" destination="c2m-2G-C47" id="Y4D-zO-qcf"/>
+                        <outlet property="noOfGuestsLabel" destination="djg-01-ILa" id="Ig4-xE-Oa2"/>
                         <outlet property="textOutput" destination="8eP-Ol-6Nr" id="dxn-ey-M6P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zxi-9w-iEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6266" y="-152"/>
+            <point key="canvasLocation" x="6264.8000000000002" y="-152.47376311844079"/>
         </scene>
         <!--Create Reservation-->
         <scene sceneID="cBe-uI-OIR">

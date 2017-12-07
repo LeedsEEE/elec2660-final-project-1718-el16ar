@@ -52,7 +52,7 @@
   //[StoreNum synchronize];
 
     NSString *restaurantName = self.restaurant.restaurantName;
-    NSInteger noOfGuests = self.NoOfGuests.text.integerValue;
+    NSInteger noOfGuests = self.noOfGuestsLabel.text.integerValue;
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     

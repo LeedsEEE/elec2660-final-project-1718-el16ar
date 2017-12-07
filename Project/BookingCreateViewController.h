@@ -14,8 +14,8 @@
 @interface BookingCreateViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *NoOfGuests;
 @property (weak, nonatomic) IBOutlet UIDatePicker *DatePicker;
-@property (weak, nonatomic) IBOutlet UITextView *textOutput;
 @property (strong, nonatomic) Restaurant *restaurant;
+@property (weak, nonatomic) IBOutlet UILabel *noOfGuestsLabel;
 
 
 

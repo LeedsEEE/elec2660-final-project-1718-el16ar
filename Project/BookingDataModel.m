@@ -32,9 +32,9 @@
             self.Restaurant = [restaurantStore objectForKey:[NSString stringWithFormat:@"Key%d",i]];
             key = [NSString stringWithFormat:@"Key%d",i];
             
-           // Booking * = [[Booking alloc] init];
-           // [NSString stringWithFormat:@"Key%d",i].restaurant = self.Restaurant;
-           //  [NSString stringWithFormat:@"Key%d",i].noOfGuests = @"4";
+        //   Booking * [[NSString stringWithFormat:@"Key%d",i] = [[Booking alloc] init];
+      //  [NSString stringWithFormat:@"Key%d",i].restaurant = self.Restaurant;
+     //   [NSString stringWithFormat:@"Key%d",i].noOfGuests = @"4";
             [self.ExistingBookings addObject:[NSString stringWithFormat:@"Key%d",i]];
             
         }
