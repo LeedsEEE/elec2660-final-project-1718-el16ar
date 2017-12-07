@@ -71,7 +71,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)bookingTableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+    return existingBookings.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)bookingTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

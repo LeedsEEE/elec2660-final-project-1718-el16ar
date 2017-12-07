@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project/BookingCreateViewController.m"
-            timestampString = "533762962.04649"
+            timestampString = "534342799.157453"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "-NoOfGuestStepper:"
             landmarkType = "7">
          </BreakpointContent>
