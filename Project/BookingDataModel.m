@@ -14,11 +14,11 @@
     self = [super init];
     if (self) {
 
-        int i;
+        int i =0;
         NSString *key;
         
         self.ExistingBookings = [NSMutableArray array];
-        //Italian restaurants array
+
         
         
         NSUserDefaults *restaurantStore = [NSUserDefaults standardUserDefaults];
@@ -26,26 +26,29 @@
         NSUserDefaults *dateStore = [NSUserDefaults standardUserDefaults];
         
         
-        for (i = 0;[[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Key%d",i]] != nil; i++) {
+       // while ([[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Key%d",i]] != NULL) {
             
             
-            self.Restaurant = [restaurantStore objectForKey:[NSString stringWithFormat:@"Key%d",i]];
-            key = [NSString stringWithFormat:@"Key%d",i];
+           self.Restaurant = [restaurantStore stringForKey:@"Key1"];
+        
+         //   NSLog(@"%@", self.Restaurant);
             
-        //   Booking * [[NSString stringWithFormat:@"Key%d",i] = [[Booking alloc] init];
-      //  [NSString stringWithFormat:@"Key%d",i].restaurant = self.Restaurant;
-     //   [NSString stringWithFormat:@"Key%d",i].noOfGuests = @"4";
-            [self.ExistingBookings addObject:[NSString stringWithFormat:@"Key%d",i]];
+           // key = [NSString stringWithFormat:@"Key%d",i];
+        
             
-        }
-        if ([[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Key%d",i]] == NULL) {
-            
-            
-            [restaurantStore synchronize];
-            [numStore synchronize];
-            [dateStore synchronize];
+    Booking *key1 = [[Booking alloc] init];
+    key1.restaurant = self.Restaurant;
+    key1.noOfGuests = @"4";
+    [self.ExistingBookings addObject:key1];
+        
+                Booking *key2 = [[Booking alloc] init];
+                key2.restaurant = @"Rest2";
+                key2.noOfGuests = @"4";
+                [self.ExistingBookings addObject:key2];
 
-        }
+            
+        
+       // }
         
         
         
@@ -69,10 +72,8 @@
         //    [StoreRestaurant setObject:restaurantName forKey:[NSString stringWithFormat:@"%d",i]];
         //    [StoreNum setInteger:noOfGuests forKey:[NSString stringWithFormat:@"%d",i]];
          //   [StoreRestaurant synchronize];
-        
-            NSLog(@"Booking stored at key: %d", i);
 
-        
+       // [restaurantStore objectForKey:[NSString stringWithFormat:@"Key2"]]
         
         
     }

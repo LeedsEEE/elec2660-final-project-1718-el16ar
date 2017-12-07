@@ -121,13 +121,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Project/BookingCreateViewController.m"
-            timestampString = "534288461.813572"
+            filePath = "Project/BookingDataModel.m"
+            timestampString = "534365738.272405"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "-ConfirmButtonPressed:"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "-init"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

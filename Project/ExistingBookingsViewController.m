@@ -24,42 +24,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.data = [[BookingDataModel alloc] init];
-   /*
-    AppDelegate *appDelegate =[[UIApplication sharedApplication]delegate];
-   NSManagedObjectContext *context =[appDelegate managedObjectContext];
-    NSError *error;
-    
-    if (managedObjectContext != nil) {
-        if ([managedObjectContext hasChanges] &&[managedObjectContext save:&error]) {
-            NSLog(@"Unresolved error %@,%@",error, [error userInfo]);
-            abort();
-        }
-    }
-
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription
-                                   entityForName:@"BookingEntity" inManagedObjectContext:context];
-
-    [fetchRequest setEntity:entity];
-    fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
-    // Test reading core data
-    
-    for (NSManagedObject *player in fetchedObjects) {
-        
-        NSLog(@"Restaurant: %@", [player valueForKey:@"restaurant"]);
-        NSLog(@"Date: %@", [player valueForKey:@"date"]);
-        NSLog(@"GuestsNum: %@", [player valueForKey:@"noOfGuests"]);
-    }
-    
-    */
-  //  self.bookingsList = [[NSMutableArray alloc] init];
-   // [self.bookingsList addObject:@"Example1"];
-   // [self.bookingsList addObject:@"Example2"];
-   // [self.bookingsList addObject:@"Example3"];
-    
-  //  NSLog(@"%ld", self.bookingsList.count);
-   // NSLog(@"%@", self.bookingsList objectAtIndex:0);
-}
+   }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -71,7 +36,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)bookingTableView numberOfRowsInSection:(NSInteger)section {
-    return existingBookings.count;
+    return self.data.ExistingBookings.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)bookingTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

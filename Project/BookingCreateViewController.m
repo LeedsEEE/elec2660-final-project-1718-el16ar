@@ -26,18 +26,13 @@
 }
 
 - (IBAction)NoOfGuestStepper:(UIStepper *)sender {
-    _NoOfGuests.text = [NSString stringWithFormat:@"%0.f", sender.value];
-}
-
-//lack of constiency when field changed
-
-- (IBAction)NoOfGuestsEdit:(UITextField *)sender {
+    self.noOfGuestsLabel.text = [NSString stringWithFormat:@"%0.f", sender.value];
+    //Label for num of guests changed with stepper
     
 }
 
-- (IBAction)ConfirmButtonPressed:(UIButton *)sender {
 
-    [NSArray arrayWithObjects: @"key1", @"key2", @"key3", @"key4", @"key5", nil ];
+- (IBAction)ConfirmButtonPressed:(UIButton *)sender {
     
  /*  NSDictionary *bookingInfo = @{@"restaurant": self.restaurant.restaurantName,
                                @"date": self.DatePicker.date ,
@@ -72,15 +67,21 @@
 
     for (i = 0; [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Key%d",i]] != NULL; i++) {
     }
+    
     if ([[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Key%d",i]] == NULL) {
         
-    [restaurantStore setObject:restaurantName forKey:[NSString stringWithFormat:@"Key%d",i]];
-    [numStore setInteger:noOfGuests forKey:[NSString stringWithFormat:@"Key%d",i]];
-    [dateStore setObject:date forKey:[NSString stringWithFormat:@"Key%d",i]];
-          
+//    [restaurantStore setObject:restaurantName forKey:[NSString stringWithFormat:@"Key%d",i]];
+//    [numStore setInteger:noOfGuests forKey:[NSString stringWithFormat:@"Key%d",i]];
+ //   [dateStore setObject:date forKey:[NSString stringWithFormat:@"Key%d",i]];
+        
+        [restaurantStore setObject:restaurantName forKey:@"restKey1"];
+        [numStore setInteger:noOfGuests forKey:@"numKey1"];
+        [dateStore setObject:date forKey:@"dateKey1"];
+        
+        
     [restaurantStore synchronize];
-    [numStore synchronize];
-    [dateStore synchronize];
+  //  [numStore synchronize];
+  //  [dateStore synchronize];
 
           
         NSLog(@"Booking stored at key: %d", i);

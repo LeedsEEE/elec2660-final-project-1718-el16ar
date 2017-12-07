@@ -12,15 +12,12 @@
 #import "RestaurantDataModel.h"
 
 @interface BookingCreateViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextField *NoOfGuests;
 @property (weak, nonatomic) IBOutlet UIDatePicker *DatePicker;
 @property (strong, nonatomic) Restaurant *restaurant;
 @property (weak, nonatomic) IBOutlet UILabel *noOfGuestsLabel;
 
 
 
-
-- (IBAction)NoOfGuestsEdit:(UITextField *)sender;
 - (IBAction)ConfirmButtonPressed:(UIButton *)sender;
 
 

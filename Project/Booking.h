@@ -10,7 +10,7 @@
 
 @interface Booking : NSObject
 
-@property (nonatomic, strong) NSDate *date;
+@property (nonatomic, strong) NSString *date;
 @property (nonatomic, strong) NSString *restaurant;
 @property (nonatomic, strong) NSString *noOfGuests;
 
