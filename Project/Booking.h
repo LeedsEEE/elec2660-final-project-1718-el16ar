@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) NSString *date;
 @property (nonatomic, strong) NSString *restaurant;
-@property (nonatomic, strong) NSString *noOfGuests;
+@property NSInteger noOfGuests;
+@property NSInteger key;
 
 @end

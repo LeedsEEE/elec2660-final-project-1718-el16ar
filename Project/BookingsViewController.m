@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.restaurantLabel.text = self.booking.restaurant;
+    self.dateLabel.text = self.booking.date;
+    self.noOfGuestsLabel.text = (@"Number of guests: %@",[NSString stringWithFormat:@"Number of guests: %li", (long)self.booking.noOfGuests]);
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,4 +39,10 @@
 }
 */
 
+- (IBAction)cancelButtonPress:(UIButton *)sender {
+    
+    NSUserDefaults *restaurantStore = [NSUserDefaults standardUserDefaults];
+    [restaurantStore setObject:NULL forKey:[NSString stringWithFormat:@"restaurantKey%ld", (long)self.booking.key]];
+    NSLog(@"Reservation cancelled");
+}
 @end

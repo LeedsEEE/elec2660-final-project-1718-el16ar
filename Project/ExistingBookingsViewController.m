@@ -7,6 +7,7 @@
 //
 
 #import "ExistingBookingsViewController.h"
+#
 
 @interface ExistingBookingsViewController ()
 
@@ -25,6 +26,10 @@
     // Do any additional setup after loading the view.
     self.data = [[BookingDataModel alloc] init];
    }
+
+- (void) viewDidAppear:(BOOL)animated{
+    self.data = [[BookingDataModel alloc] init];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -46,6 +51,7 @@
     //temporary storage of data from array
     cell.textLabel.text = tempBooking.restaurant;
     //title entered for each entry
+    cell.detailTextLabel.text = tempBooking.date;
     
     return cell;
     
@@ -62,39 +68,22 @@
         
     }
 
-/*
-    - (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type
-    {
-        switch(type) {
-                
-            case NSFetchedResultsChangeInsert:
-                [self.tableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
-                break;
-                
-            case NSFetchedResultsChangeDelete:
-                [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
-                break;
-        }
-    }
- 
-    
-    - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
-    {
-        // The fetch controller has sent all current change notifications, so tell the table view to process all updates.
-        [self.tableView endUpdates];
-    }
-}
-    
-*/
 
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    if ([[segue identifier] isEqualToString:@"bookingSegue"]) {
+        
+    BookingsViewController *destinationViewController = [segue destinationViewController];
+        
+    NSIndexPath *indexPath = [self.bookingTableView indexPathForSelectedRow];
+    
+    Booking *tempbooking = [self.data.ExistingBookings objectAtIndex:indexPath.row];
+    destinationViewController.booking = tempbooking;
+    }
 }
-
 
 @end
 

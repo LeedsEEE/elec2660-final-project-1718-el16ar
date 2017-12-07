@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "Bookings+CoreDataClass.h"
 #import "BookingDataModel.h"
+#import "BookingsViewController.h"
 
 @interface ExistingBookingsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate>
 

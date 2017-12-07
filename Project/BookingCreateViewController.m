@@ -50,11 +50,11 @@
     NSInteger noOfGuests = self.noOfGuestsLabel.text.integerValue;
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    NSString *date = [dateFormatter stringFromDate:self.DatePicker.date];
     
-    NSString *date = [dateFormatter stringFromDate:_DatePicker.date];
+    NSLog(@"date selected: %@",date);
     
-    int i= 0;
-    
+    int i;
     NSUserDefaults *restaurantStore = [NSUserDefaults standardUserDefaults];
     NSUserDefaults *numStore = [NSUserDefaults standardUserDefaults];
     NSUserDefaults *dateStore = [NSUserDefaults standardUserDefaults];
@@ -65,37 +65,52 @@
       //  NSLog(@"EMPTY KEY");
   //  }
 
-    for (i = 0; [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Key%d",i]] != NULL; i++) {
-    }
+ 
     
-    if ([[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"Key%d",i]] == NULL) {
-        
+    
 //    [restaurantStore setObject:restaurantName forKey:[NSString stringWithFormat:@"Key%d",i]];
 //    [numStore setInteger:noOfGuests forKey:[NSString stringWithFormat:@"Key%d",i]];
  //   [dateStore setObject:date forKey:[NSString stringWithFormat:@"Key%d",i]];
         
-        [restaurantStore setObject:restaurantName forKey:@"restKey1"];
-        [numStore setInteger:noOfGuests forKey:@"numKey1"];
-        [dateStore setObject:date forKey:@"dateKey1"];
+        for (i = 0; [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"restaurantKey%d",i]] != NULL; i++) {
+        }
+    
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"restaurantKey%d",i]] == NULL) {
+
+    
+        [restaurantStore setObject:restaurantName forKey:[NSString stringWithFormat:@"restaurantKey%d",i]];
+        [numStore setInteger:noOfGuests forKey:[NSString stringWithFormat:@"numberKey%d",i]];
+        [dateStore setObject:date forKey:[NSString stringWithFormat:@"dateKey%d",i]];
         
+        
+    }
+    
+      /*
+    } else if ([[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"restKey2"]] == NULL){
+            
+        [restaurantStore setObject:restaurantName forKey:@"restKey2"];
+        [numStore setInteger:noOfGuests forKey:@"numKey2"];
+        [dateStore setObject:date forKey:@"dateKey2"];
+            
+        } else if ([[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"restKey2"]] == NULL) {
+            
+        [restaurantStore setObject:restaurantName forKey:@"restKey3"];
+        [numStore setInteger:noOfGuests forKey:@"numKey3"];
+        [dateStore setObject:date forKey:@"dateKey3"];
+        }
+            
+        */
         
     [restaurantStore synchronize];
-  //  [numStore synchronize];
-  //  [dateStore synchronize];
+   [numStore synchronize];
+   [dateStore synchronize];
 
           
         NSLog(@"Booking stored at key: %d", i);
         
     }
-    
-    
-    
-    
-   // NSUserDefaults *StoreDate = [NSUserDefaults standardUserDefaults];
-  //  [StoreDate setObject:self.restaurant.restaurantName forKey:@"Restaurant"];
-   // [StoreRestaurant synchronize];
 
-}
+
 @end
 
 /*

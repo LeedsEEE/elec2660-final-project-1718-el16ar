@@ -7,11 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BookingDataModel.h"
+#import "ExistingBookingsViewController.h"
 
 @interface BookingsViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *restaurantLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *noOfGuestsLabel;
+
+@property (strong, nonatomic) Booking *booking;
+- (IBAction)cancelButtonPress:(UIButton *)sender;
+
 
 @end
