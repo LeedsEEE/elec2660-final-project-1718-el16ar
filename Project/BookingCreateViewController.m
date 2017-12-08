@@ -144,6 +144,9 @@
             
             //confirmation message displayed
         
+          //  [[self navigationController] popToViewController:controller animated:YES];
+
+            
             }
         }
     }
