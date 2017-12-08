@@ -22,9 +22,10 @@
     //selected type int read from NSUserDefaults
     
     NSLog(@"Selected type = %li", (long)self.type);
-
+    
     self.data = [[RestaurantDataModel alloc] init];
-
+    
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     

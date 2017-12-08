@@ -21,9 +21,14 @@
     self.restaurantLabel.text = self.booking.restaurant;
     self.dateLabel.text = self.booking.date;
     self.timeLabel.text = self.booking.time;
-    self.noOfGuestsLabel.text = (@"Number of guests: %@",[NSString stringWithFormat:@"Number of guests: %li", (long)self.booking.noOfGuests]);
+    self.noOfGuestsLabel.text = ([NSString stringWithFormat:@"Number of guests: %li", (long)self.booking.noOfGuests]);
     //labels set to booking data
     
+    self.cancelButton.layer.cornerRadius = 10;
+    self.cancelButton.clipsToBounds = true;
+    self.cancelButton.layer.borderWidth = 1;
+    //round corners of button and add border
+
 }
 
 - (void)didReceiveMemoryWarning {

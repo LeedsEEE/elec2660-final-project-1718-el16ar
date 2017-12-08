@@ -15,8 +15,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *noOfGuestsLabel;
+@property (weak, nonatomic) IBOutlet UIButton *cancelButton;
 
 @property (strong, nonatomic) Booking *booking;
+
 - (IBAction)cancelButtonPress:(UIButton *)sender;
 
 

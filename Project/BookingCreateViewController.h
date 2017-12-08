@@ -14,8 +14,9 @@
 @property (weak, nonatomic) IBOutlet UIDatePicker *DatePicker;
 @property (strong, nonatomic) Restaurant *restaurant;
 @property (weak, nonatomic) IBOutlet UILabel *noOfGuestsLabel;
-@property(nonatomic, retain) NSDate *dateVal;
+@property (weak, nonatomic) IBOutlet UIButton *confirmButton;
 
+@property(nonatomic, retain) NSDate *dateVal;
 @property (strong, nonatomic) NSString *restaurantName;
 @property NSInteger noOfGuests;
 @property (strong, nonatomic) NSString *date;

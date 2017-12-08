@@ -19,6 +19,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     NSLog(@"Selected Restaurant: %@", self.restaurant.restaurantName);
+    
+    self.confirmButton.layer.cornerRadius = 10;
+    self.confirmButton.clipsToBounds = true;
+    self.confirmButton.layer.borderWidth = 1;
+    //round corners of button and add border
+    
+    self.noOfGuestsLabel.text = @"0";
         
 }
 
@@ -57,14 +64,12 @@
     [dateFormatter setDateFormat:@"dd MMM, hh:mm aa"];
     self.dateVal =  self.DatePicker.date;
     self.dateFull = [dateFormatter stringFromDate:self.dateVal];
-    
     //get date from date picker
         
     NSArray *splitDate = [self.dateFull componentsSeparatedByString:@", "];
     
     self.date = splitDate[0];
     self.time = splitDate[1];
-    
     //date split into date and time
         
     NSLog(@"date selected: %@",self.date);

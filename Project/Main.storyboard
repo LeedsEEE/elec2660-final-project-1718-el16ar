@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -37,11 +36,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPg-bW-SOr">
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="237" id="k0A-Oj-dc2"/>
+                                    <constraint firstAttribute="height" constant="60" id="hM2-rw-Ow9"/>
+                                    <constraint firstAttribute="width" constant="318" id="ovg-Vq-5WA"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Select Restaurant Type"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Select Restaurant Type">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="selectButtonPress:" destination="Msj-Cy-11Q" eventType="touchUpInside" id="GyR-IZ-qgp"/>
                                     <segue destination="0fJ-Qw-tyv" kind="show" identifier="typeSelect" id="3A9-Y9-bHy">
@@ -57,13 +61,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wko-Cn-jaf" firstAttribute="top" secondItem="Meb-Ju-u99" secondAttribute="bottom" constant="161" id="0TZ-Xw-dcR"/>
                             <constraint firstItem="XPg-bW-SOr" firstAttribute="centerX" secondItem="eFK-0M-D5F" secondAttribute="centerX" id="7YG-VX-P0O"/>
                             <constraint firstItem="LWT-e6-M6c" firstAttribute="top" secondItem="Meb-Ju-u99" secondAttribute="bottom" constant="109" id="DB2-qZ-abA"/>
                             <constraint firstItem="8py-gd-vrQ" firstAttribute="top" secondItem="Meb-Ju-u99" secondAttribute="bottom" constant="42" id="ICh-cr-4HC"/>
+                            <constraint firstItem="XPg-bW-SOr" firstAttribute="top" secondItem="Meb-Ju-u99" secondAttribute="bottom" constant="463" id="KSr-Et-311"/>
                             <constraint firstItem="wko-Cn-jaf" firstAttribute="centerX" secondItem="eFK-0M-D5F" secondAttribute="centerX" id="UJk-k1-fQ1"/>
                             <constraint firstItem="8py-gd-vrQ" firstAttribute="centerX" secondItem="eFK-0M-D5F" secondAttribute="centerX" id="bBg-UI-p0W"/>
-                            <constraint firstItem="XPg-bW-SOr" firstAttribute="top" secondItem="Meb-Ju-u99" secondAttribute="bottom" constant="508" id="bWi-4R-xm7"/>
-                            <constraint firstItem="wko-Cn-jaf" firstAttribute="top" secondItem="Meb-Ju-u99" secondAttribute="bottom" constant="212" id="pAo-HO-aV2"/>
                             <constraint firstItem="LWT-e6-M6c" firstAttribute="centerX" secondItem="eFK-0M-D5F" secondAttribute="centerX" id="vbl-hL-zEa"/>
                         </constraints>
                     </view>
@@ -71,11 +75,12 @@
                     <navigationItem key="navigationItem" id="y3T-g2-9BU"/>
                     <connections>
                         <outlet property="RestaurantTypePicker" destination="wko-Cn-jaf" id="bNa-6B-hhy"/>
+                        <outlet property="selectRestaurantButton" destination="XPg-bW-SOr" id="JcN-Ca-WG2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G2T-U2-Clk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3770" y="-152"/>
+            <point key="canvasLocation" x="3768.8000000000002" y="-152.47376311844079"/>
         </scene>
         <!--Create Reservation-->
         <scene sceneID="zmK-w5-RbV">
@@ -108,11 +113,11 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zv1-9h-dl1" id="NoB-dm-gK5">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6l2-Lt-6h4">
-                                            <frame key="frameInset" minX="15" width="345" height="43.5"/>
+                                            <frame key="frameInset" minX="15" width="345" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -149,7 +154,8 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbu-2I-GqO">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="256" id="KMd-OD-JjH"/>
+                                    <constraint firstAttribute="height" constant="28" id="BeK-hi-koD"/>
+                                    <constraint firstAttribute="width" constant="343" id="dvE-i6-L0s"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
@@ -169,7 +175,7 @@
                                     <constraint firstAttribute="height" constant="41" id="34A-l9-kfv"/>
                                     <constraint firstAttribute="width" constant="256" id="xgK-ez-ZOL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -188,19 +194,6 @@
                                     <tabBarItem id="Nyk-e0-HKq"/>
                                 </items>
                             </tabBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKN-bS-CUm">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="198" id="GuT-Wx-p6R"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Create Reservation"/>
-                                <connections>
-                                    <action selector="createButtonPressed:" destination="pq0-Oy-HSK" eventType="touchUpInside" id="fJy-zY-D45"/>
-                                    <segue destination="D6q-tR-HYa" kind="show" identifier="restaurantdata" id="lgy-qf-Jha">
-                                        <nil key="action"/>
-                                    </segue>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTc-Ad-TqM">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="UVl-ce-lqV"/>
@@ -209,17 +202,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKN-bS-CUm">
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="241" id="Hiq-ym-Pl0"/>
+                                    <constraint firstAttribute="height" constant="60" id="Qgc-HC-ojk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Create Reservation">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="D6q-tR-HYa" kind="show" identifier="restaurantdata" id="lgy-qf-Jha">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="nbu-2I-GqO" firstAttribute="top" secondItem="JWc-0v-H2D" secondAttribute="bottom" id="0NP-zF-kXW"/>
                             <constraint firstItem="V8m-NB-uRJ" firstAttribute="top" secondItem="JWc-0v-H2D" secondAttribute="bottom" constant="105" id="5nJ-AA-Bqs"/>
-                            <constraint firstItem="ZKN-bS-CUm" firstAttribute="top" secondItem="JWc-0v-H2D" secondAttribute="bottom" constant="479" id="9jn-LK-V3o"/>
                             <constraint firstItem="idw-lJ-Nbb" firstAttribute="centerX" secondItem="32K-GI-LLf" secondAttribute="centerX" id="Hzc-wb-9lm"/>
                             <constraint firstItem="fUV-pq-wqU" firstAttribute="top" secondItem="JWc-0v-H2D" secondAttribute="bottom" constant="335" id="LoO-mw-NuS"/>
                             <constraint firstItem="idw-lJ-Nbb" firstAttribute="top" secondItem="JWc-0v-H2D" secondAttribute="bottom" constant="35" id="MCd-EO-BxS"/>
                             <constraint firstItem="ZKN-bS-CUm" firstAttribute="centerX" secondItem="32K-GI-LLf" secondAttribute="centerX" id="OLB-fp-ox5"/>
                             <constraint firstItem="QTc-Ad-TqM" firstAttribute="centerX" secondItem="32K-GI-LLf" secondAttribute="centerX" id="Y7g-Y3-qV3"/>
+                            <constraint firstItem="ZKN-bS-CUm" firstAttribute="top" secondItem="JWc-0v-H2D" secondAttribute="bottom" constant="464" id="dyS-l8-oFO"/>
                             <constraint firstItem="QTc-Ad-TqM" firstAttribute="top" secondItem="JWc-0v-H2D" secondAttribute="bottom" constant="306" id="pOF-nR-fcz"/>
                             <constraint firstItem="nbu-2I-GqO" firstAttribute="centerX" secondItem="32K-GI-LLf" secondAttribute="centerX" id="q4K-ka-2by"/>
                             <constraint firstItem="V8m-NB-uRJ" firstAttribute="centerX" secondItem="32K-GI-LLf" secondAttribute="centerX" id="rYt-f6-9Pf"/>
@@ -227,6 +237,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="createReservationButton" destination="ZKN-bS-CUm" id="Z2A-37-jZ6"/>
                         <outlet property="restaurantAddressLabel" destination="QTc-Ad-TqM" id="eeq-du-RSy"/>
                         <outlet property="restaurantDescriptionLabel" destination="fUV-pq-wqU" id="04V-8J-U8G"/>
                         <outlet property="restaurantImage" destination="V8m-NB-uRJ" id="5oK-w4-7Pe"/>
@@ -236,7 +247,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fRZ-mA-ruz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5434" y="-152"/>
+            <point key="canvasLocation" x="5432.8000000000002" y="-152.47376311844079"/>
         </scene>
         <!--Existing Reservations-->
         <scene sceneID="VMe-p1-v5t">
@@ -296,18 +307,18 @@
                                         <rect key="frame" x="0.0" y="92" width="1000" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JAE-KW-ddC" id="v2z-Q9-H0I">
-                                            <frame key="frameInset" width="375" height="43.5"/>
+                                            <frame key="frameInset" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Doc-9F-bN4">
-                                                    <frame key="frameInset" minX="15" minY="12" width="33.5" height="20.5"/>
+                                                    <frame key="frameInset" minX="15" minY="11" width="34" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RBK-Ri-uuR">
-                                                    <frame key="frameInset" minX="316" minY="12" width="44" height="20.5"/>
+                                                    <frame key="frameInset" minX="316" minY="11" width="44" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -388,20 +399,6 @@
                                     <tabBarItem id="vUT-JY-l6g"/>
                                 </items>
                             </tabBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ykj-eS-CnT">
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.11242632750000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="159" id="Op5-Fh-0Km"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <size key="titleShadowOffset" width="9" height="3"/>
-                                <state key="normal" title="Cancel">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="cancelButtonPress:" destination="dtG-EK-DCg" eventType="touchUpInside" id="jQA-y3-Mot"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reservation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNq-Jj-jsZ">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="256" id="lAa-y6-c53"/>
@@ -426,6 +423,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ykj-eS-CnT">
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.11242632750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4cP-lh-cm4"/>
+                                    <constraint firstAttribute="width" constant="159" id="Op5-Fh-0Km"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <size key="titleShadowOffset" width="9" height="3"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButtonPress:" destination="dtG-EK-DCg" eventType="touchUpInside" id="jQA-y3-Mot"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -435,15 +447,16 @@
                             <constraint firstItem="7WN-yJ-ccS" firstAttribute="top" secondItem="88W-Ng-EnJ" secondAttribute="bottom" constant="302" id="Bx9-ge-GEB"/>
                             <constraint firstItem="JGf-7e-713" firstAttribute="centerX" secondItem="Tem-tT-MBL" secondAttribute="centerX" id="Oxk-j3-ff0"/>
                             <constraint firstItem="lzm-XQ-3zY" firstAttribute="centerX" secondItem="Tem-tT-MBL" secondAttribute="centerX" id="PIG-hL-aOr"/>
+                            <constraint firstItem="Ykj-eS-CnT" firstAttribute="top" secondItem="88W-Ng-EnJ" secondAttribute="bottom" constant="472" id="TlP-qN-RHu"/>
                             <constraint firstItem="Ykj-eS-CnT" firstAttribute="centerX" secondItem="Tem-tT-MBL" secondAttribute="centerX" id="YcU-se-Bb8"/>
                             <constraint firstItem="lzm-XQ-3zY" firstAttribute="top" secondItem="88W-Ng-EnJ" secondAttribute="bottom" constant="228" id="g23-VR-X1o"/>
                             <constraint firstItem="jNq-Jj-jsZ" firstAttribute="top" secondItem="88W-Ng-EnJ" secondAttribute="bottom" constant="8" id="i28-Wi-ldX"/>
-                            <constraint firstItem="Ykj-eS-CnT" firstAttribute="top" secondItem="88W-Ng-EnJ" secondAttribute="bottom" constant="504" id="rhG-5L-ADo"/>
                             <constraint firstItem="JGf-7e-713" firstAttribute="top" secondItem="88W-Ng-EnJ" secondAttribute="bottom" constant="95" id="vHu-t1-cYj"/>
                             <constraint firstItem="YIz-nY-wSP" firstAttribute="centerX" secondItem="Tem-tT-MBL" secondAttribute="centerX" id="yas-h2-fqy"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cancelButton" destination="Ykj-eS-CnT" id="tHX-s5-hfL"/>
                         <outlet property="dateLabel" destination="YIz-nY-wSP" id="WWa-lL-VsY"/>
                         <outlet property="noOfGuestsLabel" destination="7WN-yJ-ccS" id="5Il-Pz-OLZ"/>
                         <outlet property="restaurantLabel" destination="JGf-7e-713" id="Vgd-tg-wTb"/>
@@ -479,17 +492,6 @@
                                     <action selector="NoOfGuestStepper:" destination="D6q-tR-HYa" eventType="valueChanged" id="qR8-m3-YRH"/>
                                 </connections>
                             </stepper>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WG6-2q-KJa">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="249" id="Pnm-tF-eZO"/>
-                                    <constraint firstAttribute="width" secondItem="WG6-2q-KJa" secondAttribute="height" multiplier="111:26" id="glP-Ah-OG8"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Confirm Reservation Details"/>
-                                <connections>
-                                    <action selector="ConfirmButtonPressed:" destination="D6q-tR-HYa" eventType="touchUpInside" id="EGh-fh-wlK"/>
-                                </connections>
-                            </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="XK1-La-URQ">
                                 <date key="date" timeIntervalSinceReferenceDate="533240790.851372">
                                     <!--2017-11-24 18:26:30 +0000-->
@@ -500,7 +502,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djg-01-ILa">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="no." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djg-01-ILa">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="W8T-eD-TLA"/>
                                     <constraint firstAttribute="height" constant="29" id="r0l-w6-f7t"/>
@@ -509,15 +511,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WG6-2q-KJa">
+                                <color key="backgroundColor" red="0.25489292216335979" green="0.86431347150259064" blue="0.049229808244063228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="GuB-jI-Lgx"/>
+                                    <constraint firstAttribute="width" constant="321" id="vv1-Dh-lwN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Confirm Reservation Details">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ConfirmButtonPressed:" destination="D6q-tR-HYa" eventType="touchUpInside" id="EGh-fh-wlK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WG6-2q-KJa" firstAttribute="top" secondItem="fDF-A1-niB" secondAttribute="bottom" constant="502" id="6H2-qZ-NaC"/>
                             <constraint firstItem="djg-01-ILa" firstAttribute="top" secondItem="fDF-A1-niB" secondAttribute="bottom" constant="325" id="G1T-IV-ean"/>
                             <constraint firstItem="XK1-La-URQ" firstAttribute="centerX" secondItem="DYv-SW-r2n" secondAttribute="centerX" id="HKF-hH-5v2"/>
                             <constraint firstItem="viB-Dt-8kg" firstAttribute="leading" secondItem="DYv-SW-r2n" secondAttribute="leadingMargin" constant="249" id="VHt-mw-gm5"/>
                             <constraint firstItem="HDw-ju-EOb" firstAttribute="centerX" secondItem="DYv-SW-r2n" secondAttribute="centerX" id="XYJ-yf-LO5"/>
                             <constraint firstItem="bcy-4g-1VC" firstAttribute="top" secondItem="fDF-A1-niB" secondAttribute="bottom" constant="329" id="cfg-EK-axr"/>
+                            <constraint firstItem="WG6-2q-KJa" firstAttribute="top" secondItem="fDF-A1-niB" secondAttribute="bottom" constant="466" id="dRe-b5-egb"/>
                             <constraint firstItem="viB-Dt-8kg" firstAttribute="top" secondItem="fDF-A1-niB" secondAttribute="bottom" constant="325" id="fNx-Dz-QNf"/>
                             <constraint firstItem="XK1-La-URQ" firstAttribute="top" secondItem="fDF-A1-niB" secondAttribute="bottom" constant="101" id="gtR-es-CaI"/>
                             <constraint firstItem="djg-01-ILa" firstAttribute="leading" secondItem="DYv-SW-r2n" secondAttribute="leadingMargin" constant="177" id="jAD-tG-6T0"/>
@@ -528,6 +545,7 @@
                     </view>
                     <connections>
                         <outlet property="DatePicker" destination="XK1-La-URQ" id="NCh-B7-kgV"/>
+                        <outlet property="confirmButton" destination="WG6-2q-KJa" id="9ge-iT-WGN"/>
                         <outlet property="noOfGuestsLabel" destination="djg-01-ILa" id="Ig4-xE-Oa2"/>
                     </connections>
                 </viewController>

@@ -21,6 +21,11 @@
     
     self.RestaurantTypePicker.delegate = self;
     self.RestaurantTypePicker.dataSource = self;
+    
+    self.selectRestaurantButton.layer.cornerRadius = 10;
+    self.selectRestaurantButton.clipsToBounds = true;
+    self.selectRestaurantButton.layer.borderWidth = 1;
+    //round corners of button and add border
 }
 
 

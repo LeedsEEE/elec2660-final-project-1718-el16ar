@@ -25,6 +25,11 @@
     self.restaurantImage.image = [UIImage imageNamed:self.restaurant.restaurantImage];
     //Labels set to restaurant values
     
+    self.createReservationButton.layer.cornerRadius = 10;
+    self.createReservationButton.clipsToBounds = true;
+    self.createReservationButton.layer.borderWidth = 1;
+    //round corners of button and add border
+    
 }
 
 - (void)didReceiveMemoryWarning {

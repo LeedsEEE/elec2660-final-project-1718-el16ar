@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project/BookingCreateViewController.m"
-            timestampString = "534342799.157453"
+            timestampString = "534430239.280499"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "-NoOfGuestStepper:"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "-didReceiveMemoryWarning"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project/BookingsViewController.m"
-            timestampString = "534376547.504201"
+            timestampString = "534430239.280499"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "-cancelButtonPress:"
             landmarkType = "7">
          </BreakpointContent>
