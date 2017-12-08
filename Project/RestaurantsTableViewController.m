@@ -209,7 +209,6 @@
                 Restaurant *tempRestaurant = [self.data.ThaiRestaurants objectAtIndex:indexPath.row];
                 destinationViewController.restaurant = tempRestaurant;
             }
-
         }
     }
 

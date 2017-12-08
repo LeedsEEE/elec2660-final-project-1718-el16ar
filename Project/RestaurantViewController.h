@@ -20,6 +20,4 @@
 
 @property (strong, nonatomic) Restaurant *restaurant;
 
-- (IBAction)createButtonPressed:(UIButton *)sender;
-
 @end

@@ -7,29 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A63A4A301FDAB6C300EDDF51 /* Booking.m in Sources */ = {isa = PBXBuildFile; fileRef = A63A4A291FDAB6C300EDDF51 /* Booking.m */; };
+		A63A4A311FDAB6C300EDDF51 /* BookingDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A63A4A2B1FDAB6C300EDDF51 /* BookingDataModel.m */; };
+		A63A4A321FDAB6C300EDDF51 /* ExistingBookingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A63A4A2D1FDAB6C300EDDF51 /* ExistingBookingsViewController.m */; };
+		A63A4A331FDAB6C300EDDF51 /* BookingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A63A4A2F1FDAB6C300EDDF51 /* BookingsViewController.m */; };
+		A63A4A401FDAB6CE00EDDF51 /* SelectTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A63A4A351FDAB6CE00EDDF51 /* SelectTypeViewController.m */; };
+		A63A4A411FDAB6CE00EDDF51 /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = A63A4A371FDAB6CE00EDDF51 /* Restaurant.m */; };
+		A63A4A421FDAB6CE00EDDF51 /* RestaurantDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A63A4A391FDAB6CE00EDDF51 /* RestaurantDataModel.m */; };
+		A63A4A431FDAB6CE00EDDF51 /* RestaurantsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A63A4A3B1FDAB6CE00EDDF51 /* RestaurantsTableViewController.m */; };
+		A63A4A441FDAB6CE00EDDF51 /* RestaurantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A63A4A3D1FDAB6CE00EDDF51 /* RestaurantViewController.m */; };
+		A63A4A451FDAB6CE00EDDF51 /* BookingCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A63A4A3F1FDAB6CE00EDDF51 /* BookingCreateViewController.m */; };
+		A63A4A481FDAB6D900EDDF51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A63A4A471FDAB6D900EDDF51 /* AppDelegate.m */; };
 		A65455F01FD1B01E00059017 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A65455EF1FD1B01E00059017 /* Main.storyboard */; };
-		A65595061FD6ECC000CA1472 /* RestaurantsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A65595051FD6ECC000CA1472 /* RestaurantsTableViewController.m */; };
-		A655950C1FD70CEC00CA1472 /* SelectTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A655950B1FD70CEC00CA1472 /* SelectTypeViewController.m */; };
-		A664C7341FD861E700AC28C5 /* RestaurantDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A664C7331FD861E700AC28C5 /* RestaurantDataModel.m */; };
-		A664C7371FD86A5000AC28C5 /* BookingDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A664C7361FD86A5000AC28C5 /* BookingDataModel.m */; };
-		A6AE375D1FD59B82000E0657 /* BookingsFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6AE375C1FD59B82000E0657 /* BookingsFetchedResultsController.m */; };
-		A6AE37641FD5AD5D000E0657 /* ExistingBookingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6AE37631FD5AD5D000E0657 /* ExistingBookingsViewController.m */; };
-		A6C369AE1FC87B7B00C53B89 /* Booking.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C369AD1FC87B7B00C53B89 /* Booking.m */; };
-		A6C369B41FC87BCD00C53B89 /* BookingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C369B31FC87BCD00C53B89 /* BookingsViewController.m */; };
-		A6C369B71FC87BE900C53B89 /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C369B61FC87BE900C53B89 /* Restaurant.m */; };
-		A6C369BD1FC87C1100C53B89 /* RestaurantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C369BC1FC87C1100C53B89 /* RestaurantViewController.m */; };
-		A6C369C61FC8821800C53B89 /* BookingCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C369C51FC8821800C53B89 /* BookingCreateViewController.m */; };
 		A6C369C91FC890E600C53B89 /* Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6C369C71FC890E600C53B89 /* Project.xcdatamodeld */; };
 		A6EDB32C1FBB41BC00E6CEE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EDB32B1FBB41BC00E6CEE0 /* main.m */; };
-		A6EDB32F1FBB41BC00E6CEE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EDB32E1FBB41BC00E6CEE0 /* AppDelegate.m */; };
 		A6EDB3371FBB41BD00E6CEE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6EDB3361FBB41BD00E6CEE0 /* Assets.xcassets */; };
 		A6EDB33A1FBB41BD00E6CEE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6EDB3381FBB41BD00E6CEE0 /* LaunchScreen.storyboard */; };
 		A6EDB3451FBB41BE00E6CEE0 /* ProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EDB3441FBB41BE00E6CEE0 /* ProjectTests.m */; };
 		A6EDB3501FBB41BE00E6CEE0 /* ProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EDB34F1FBB41BE00E6CEE0 /* ProjectUITests.m */; };
 		A6F9EE421FD0929400881484 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A665BB4D1FCC90D8006BFA85 /* CoreData.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		A6F9EE4D1FD0977E00881484 /* Bookings+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F9EE4A1FD0977E00881484 /* Bookings+CoreDataClass.m */; };
-		A6F9EE4E1FD0977E00881484 /* Bookings+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F9EE4C1FD0977E00881484 /* Bookings+CoreDataProperties.m */; };
-		A6F9EE511FD099CF00881484 /* Bookings+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F9EE501FD099CF00881484 /* Bookings+Add.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,35 +46,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A63A4A281FDAB6C300EDDF51 /* Booking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Booking.h; sourceTree = "<group>"; };
+		A63A4A291FDAB6C300EDDF51 /* Booking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Booking.m; sourceTree = "<group>"; };
+		A63A4A2A1FDAB6C300EDDF51 /* BookingDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingDataModel.h; sourceTree = "<group>"; };
+		A63A4A2B1FDAB6C300EDDF51 /* BookingDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingDataModel.m; sourceTree = "<group>"; };
+		A63A4A2C1FDAB6C300EDDF51 /* ExistingBookingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExistingBookingsViewController.h; sourceTree = "<group>"; };
+		A63A4A2D1FDAB6C300EDDF51 /* ExistingBookingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExistingBookingsViewController.m; sourceTree = "<group>"; };
+		A63A4A2E1FDAB6C300EDDF51 /* BookingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingsViewController.h; sourceTree = "<group>"; };
+		A63A4A2F1FDAB6C300EDDF51 /* BookingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingsViewController.m; sourceTree = "<group>"; };
+		A63A4A341FDAB6CE00EDDF51 /* SelectTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectTypeViewController.h; sourceTree = "<group>"; };
+		A63A4A351FDAB6CE00EDDF51 /* SelectTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectTypeViewController.m; sourceTree = "<group>"; };
+		A63A4A361FDAB6CE00EDDF51 /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
+		A63A4A371FDAB6CE00EDDF51 /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
+		A63A4A381FDAB6CE00EDDF51 /* RestaurantDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantDataModel.h; sourceTree = "<group>"; };
+		A63A4A391FDAB6CE00EDDF51 /* RestaurantDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantDataModel.m; sourceTree = "<group>"; };
+		A63A4A3A1FDAB6CE00EDDF51 /* RestaurantsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantsTableViewController.h; sourceTree = "<group>"; };
+		A63A4A3B1FDAB6CE00EDDF51 /* RestaurantsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantsTableViewController.m; sourceTree = "<group>"; };
+		A63A4A3C1FDAB6CE00EDDF51 /* RestaurantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantViewController.h; sourceTree = "<group>"; };
+		A63A4A3D1FDAB6CE00EDDF51 /* RestaurantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantViewController.m; sourceTree = "<group>"; };
+		A63A4A3E1FDAB6CE00EDDF51 /* BookingCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingCreateViewController.h; sourceTree = "<group>"; };
+		A63A4A3F1FDAB6CE00EDDF51 /* BookingCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingCreateViewController.m; sourceTree = "<group>"; };
+		A63A4A461FDAB6D900EDDF51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A63A4A471FDAB6D900EDDF51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A65455EF1FD1B01E00059017 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		A65595051FD6ECC000CA1472 /* RestaurantsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantsTableViewController.m; sourceTree = "<group>"; };
-		A655950B1FD70CEC00CA1472 /* SelectTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectTypeViewController.m; sourceTree = "<group>"; };
-		A664C7331FD861E700AC28C5 /* RestaurantDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantDataModel.m; sourceTree = "<group>"; };
-		A664C7351FD86A5000AC28C5 /* BookingDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingDataModel.h; sourceTree = "<group>"; };
-		A664C7361FD86A5000AC28C5 /* BookingDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingDataModel.m; sourceTree = "<group>"; };
 		A665BB4D1FCC90D8006BFA85 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		A6AE375B1FD59B82000E0657 /* BookingsFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingsFetchedResultsController.h; sourceTree = "<group>"; };
-		A6AE375C1FD59B82000E0657 /* BookingsFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingsFetchedResultsController.m; sourceTree = "<group>"; };
-		A6AE37621FD5AD5D000E0657 /* ExistingBookingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExistingBookingsViewController.h; sourceTree = "<group>"; };
-		A6AE37631FD5AD5D000E0657 /* ExistingBookingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExistingBookingsViewController.m; sourceTree = "<group>"; };
-		A6C369AC1FC87B6800C53B89 /* Booking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Booking.h; sourceTree = "<group>"; };
-		A6C369AD1FC87B7B00C53B89 /* Booking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Booking.m; sourceTree = "<group>"; };
-		A6C369B21FC87BCD00C53B89 /* BookingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingsViewController.h; sourceTree = "<group>"; };
-		A6C369B31FC87BCD00C53B89 /* BookingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingsViewController.m; sourceTree = "<group>"; };
-		A6C369B51FC87BE900C53B89 /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
-		A6C369B61FC87BE900C53B89 /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
-		A6C369B81FC87BFD00C53B89 /* RestaurantDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantDataModel.h; sourceTree = "<group>"; };
-		A6C369BB1FC87C1100C53B89 /* RestaurantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantViewController.h; sourceTree = "<group>"; };
-		A6C369BC1FC87C1100C53B89 /* RestaurantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantViewController.m; sourceTree = "<group>"; };
-		A6C369BE1FC87C1D00C53B89 /* SelectTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectTypeViewController.h; sourceTree = "<group>"; };
-		A6C369C11FC87C3400C53B89 /* RestaurantsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantsTableViewController.h; sourceTree = "<group>"; };
-		A6C369C41FC8821800C53B89 /* BookingCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingCreateViewController.h; sourceTree = "<group>"; };
-		A6C369C51FC8821800C53B89 /* BookingCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingCreateViewController.m; sourceTree = "<group>"; };
 		A6C369C81FC890E600C53B89 /* Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Project.xcdatamodel; sourceTree = "<group>"; };
 		A6EDB3271FBB41BB00E6CEE0 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6EDB32B1FBB41BC00E6CEE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A6EDB32D1FBB41BC00E6CEE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A6EDB32E1FBB41BC00E6CEE0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A6EDB3361FBB41BD00E6CEE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6EDB3391FBB41BD00E6CEE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6EDB33B1FBB41BD00E6CEE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,12 +82,6 @@
 		A6EDB34B1FBB41BE00E6CEE0 /* ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6EDB34F1FBB41BE00E6CEE0 /* ProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectUITests.m; sourceTree = "<group>"; };
 		A6EDB3511FBB41BE00E6CEE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A6F9EE491FD0977E00881484 /* Bookings+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bookings+CoreDataClass.h"; sourceTree = "<group>"; };
-		A6F9EE4A1FD0977E00881484 /* Bookings+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Bookings+CoreDataClass.m"; sourceTree = "<group>"; };
-		A6F9EE4B1FD0977E00881484 /* Bookings+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bookings+CoreDataProperties.h"; sourceTree = "<group>"; };
-		A6F9EE4C1FD0977E00881484 /* Bookings+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Bookings+CoreDataProperties.m"; sourceTree = "<group>"; };
-		A6F9EE4F1FD099CF00881484 /* Bookings+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bookings+Add.h"; sourceTree = "<group>"; };
-		A6F9EE501FD099CF00881484 /* Bookings+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Bookings+Add.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,36 +118,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A6AE375E1FD5AB18000E0657 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				A6F9EE491FD0977E00881484 /* Bookings+CoreDataClass.h */,
-				A6F9EE4A1FD0977E00881484 /* Bookings+CoreDataClass.m */,
-				A6F9EE4B1FD0977E00881484 /* Bookings+CoreDataProperties.h */,
-				A6F9EE4C1FD0977E00881484 /* Bookings+CoreDataProperties.m */,
-				A6F9EE4F1FD099CF00881484 /* Bookings+Add.h */,
-				A6F9EE501FD099CF00881484 /* Bookings+Add.m */,
-				A6AE375B1FD59B82000E0657 /* BookingsFetchedResultsController.h */,
-				A6AE375C1FD59B82000E0657 /* BookingsFetchedResultsController.m */,
-			);
-			name = CoreData;
-			sourceTree = "<group>";
-		};
 		A6AE37601FD5AB94000E0657 /* NewBooking */ = {
 			isa = PBXGroup;
 			children = (
-				A6C369BE1FC87C1D00C53B89 /* SelectTypeViewController.h */,
-				A655950B1FD70CEC00CA1472 /* SelectTypeViewController.m */,
-				A6C369B51FC87BE900C53B89 /* Restaurant.h */,
-				A6C369B61FC87BE900C53B89 /* Restaurant.m */,
-				A6C369B81FC87BFD00C53B89 /* RestaurantDataModel.h */,
-				A664C7331FD861E700AC28C5 /* RestaurantDataModel.m */,
-				A6C369C11FC87C3400C53B89 /* RestaurantsTableViewController.h */,
-				A65595051FD6ECC000CA1472 /* RestaurantsTableViewController.m */,
-				A6C369BB1FC87C1100C53B89 /* RestaurantViewController.h */,
-				A6C369BC1FC87C1100C53B89 /* RestaurantViewController.m */,
-				A6C369C41FC8821800C53B89 /* BookingCreateViewController.h */,
-				A6C369C51FC8821800C53B89 /* BookingCreateViewController.m */,
+				A63A4A341FDAB6CE00EDDF51 /* SelectTypeViewController.h */,
+				A63A4A351FDAB6CE00EDDF51 /* SelectTypeViewController.m */,
+				A63A4A361FDAB6CE00EDDF51 /* Restaurant.h */,
+				A63A4A371FDAB6CE00EDDF51 /* Restaurant.m */,
+				A63A4A381FDAB6CE00EDDF51 /* RestaurantDataModel.h */,
+				A63A4A391FDAB6CE00EDDF51 /* RestaurantDataModel.m */,
+				A63A4A3A1FDAB6CE00EDDF51 /* RestaurantsTableViewController.h */,
+				A63A4A3B1FDAB6CE00EDDF51 /* RestaurantsTableViewController.m */,
+				A63A4A3C1FDAB6CE00EDDF51 /* RestaurantViewController.h */,
+				A63A4A3D1FDAB6CE00EDDF51 /* RestaurantViewController.m */,
+				A63A4A3E1FDAB6CE00EDDF51 /* BookingCreateViewController.h */,
+				A63A4A3F1FDAB6CE00EDDF51 /* BookingCreateViewController.m */,
 			);
 			name = NewBooking;
 			sourceTree = "<group>";
@@ -167,14 +140,14 @@
 		A6AE37611FD5ACBE000E0657 /* ExistingReservations */ = {
 			isa = PBXGroup;
 			children = (
-				A6C369AC1FC87B6800C53B89 /* Booking.h */,
-				A6C369AD1FC87B7B00C53B89 /* Booking.m */,
-				A664C7351FD86A5000AC28C5 /* BookingDataModel.h */,
-				A664C7361FD86A5000AC28C5 /* BookingDataModel.m */,
-				A6AE37621FD5AD5D000E0657 /* ExistingBookingsViewController.h */,
-				A6AE37631FD5AD5D000E0657 /* ExistingBookingsViewController.m */,
-				A6C369B21FC87BCD00C53B89 /* BookingsViewController.h */,
-				A6C369B31FC87BCD00C53B89 /* BookingsViewController.m */,
+				A63A4A281FDAB6C300EDDF51 /* Booking.h */,
+				A63A4A291FDAB6C300EDDF51 /* Booking.m */,
+				A63A4A2A1FDAB6C300EDDF51 /* BookingDataModel.h */,
+				A63A4A2B1FDAB6C300EDDF51 /* BookingDataModel.m */,
+				A63A4A2C1FDAB6C300EDDF51 /* ExistingBookingsViewController.h */,
+				A63A4A2D1FDAB6C300EDDF51 /* ExistingBookingsViewController.m */,
+				A63A4A2E1FDAB6C300EDDF51 /* BookingsViewController.h */,
+				A63A4A2F1FDAB6C300EDDF51 /* BookingsViewController.m */,
 			);
 			name = ExistingReservations;
 			sourceTree = "<group>";
@@ -203,11 +176,10 @@
 		A6EDB3291FBB41BB00E6CEE0 /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				A6EDB32D1FBB41BC00E6CEE0 /* AppDelegate.h */,
-				A6EDB32E1FBB41BC00E6CEE0 /* AppDelegate.m */,
+				A63A4A461FDAB6D900EDDF51 /* AppDelegate.h */,
+				A63A4A471FDAB6D900EDDF51 /* AppDelegate.m */,
 				A6AE37611FD5ACBE000E0657 /* ExistingReservations */,
 				A6AE37601FD5AB94000E0657 /* NewBooking */,
-				A6AE375E1FD5AB18000E0657 /* CoreData */,
 				A6EDB3361FBB41BD00E6CEE0 /* Assets.xcassets */,
 				A65455EF1FD1B01E00059017 /* Main.storyboard */,
 				A6EDB3381FBB41BD00E6CEE0 /* LaunchScreen.storyboard */,
@@ -378,23 +350,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6C369C61FC8821800C53B89 /* BookingCreateViewController.m in Sources */,
-				A6F9EE4D1FD0977E00881484 /* Bookings+CoreDataClass.m in Sources */,
-				A6AE37641FD5AD5D000E0657 /* ExistingBookingsViewController.m in Sources */,
+				A63A4A451FDAB6CE00EDDF51 /* BookingCreateViewController.m in Sources */,
+				A63A4A411FDAB6CE00EDDF51 /* Restaurant.m in Sources */,
+				A63A4A421FDAB6CE00EDDF51 /* RestaurantDataModel.m in Sources */,
+				A63A4A331FDAB6C300EDDF51 /* BookingsViewController.m in Sources */,
+				A63A4A401FDAB6CE00EDDF51 /* SelectTypeViewController.m in Sources */,
+				A63A4A431FDAB6CE00EDDF51 /* RestaurantsTableViewController.m in Sources */,
+				A63A4A321FDAB6C300EDDF51 /* ExistingBookingsViewController.m in Sources */,
+				A63A4A481FDAB6D900EDDF51 /* AppDelegate.m in Sources */,
+				A63A4A301FDAB6C300EDDF51 /* Booking.m in Sources */,
+				A63A4A311FDAB6C300EDDF51 /* BookingDataModel.m in Sources */,
+				A63A4A441FDAB6CE00EDDF51 /* RestaurantViewController.m in Sources */,
 				A6C369C91FC890E600C53B89 /* Project.xcdatamodeld in Sources */,
-				A664C7341FD861E700AC28C5 /* RestaurantDataModel.m in Sources */,
-				A6C369B41FC87BCD00C53B89 /* BookingsViewController.m in Sources */,
-				A6AE375D1FD59B82000E0657 /* BookingsFetchedResultsController.m in Sources */,
-				A655950C1FD70CEC00CA1472 /* SelectTypeViewController.m in Sources */,
-				A6C369B71FC87BE900C53B89 /* Restaurant.m in Sources */,
-				A6C369BD1FC87C1100C53B89 /* RestaurantViewController.m in Sources */,
-				A6F9EE511FD099CF00881484 /* Bookings+Add.m in Sources */,
-				A664C7371FD86A5000AC28C5 /* BookingDataModel.m in Sources */,
-				A6C369AE1FC87B7B00C53B89 /* Booking.m in Sources */,
-				A65595061FD6ECC000CA1472 /* RestaurantsTableViewController.m in Sources */,
-				A6EDB32F1FBB41BC00E6CEE0 /* AppDelegate.m in Sources */,
 				A6EDB32C1FBB41BC00E6CEE0 /* main.m in Sources */,
-				A6F9EE4E1FD0977E00881484 /* Bookings+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

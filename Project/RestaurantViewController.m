@@ -23,6 +23,8 @@
     self.restaurantAddressLabel.text = self.restaurant.restaurantAddress;
     self.restaurantDescriptionLabel.text = self.restaurant.restaurantDescription;
     self.restaurantImage.image = [UIImage imageNamed:self.restaurant.restaurantImage];
+    //Labels set to restaurant values
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,12 +46,10 @@
         BookingCreateViewController *destinationViewController = [segue destinationViewController];
         
         destinationViewController.restaurant = self.restaurant;
-        
+        //restaurant name pushed by segue to next view 
+
     }
     
 }
 
-
-- (IBAction)createButtonPressed:(UIButton *)sender {
-}
 @end

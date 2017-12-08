@@ -44,7 +44,7 @@
         return [NSString stringWithFormat:@"Thai"];
     }
 }
-//picker view rows set to restaurants
+//picker view rows set to restaurant types
 
 - (void)pickerView:(UIPickerView *)pickerView
       didSelectRow:(NSInteger)row
@@ -65,13 +65,13 @@
         self.typeSelected = 4;
     }
 }
-//type selected determined
+//type selected determined from row selection
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView
 numberOfRowsInComponent:(NSInteger)component{
     return 5;
 }
-//sets number of picker view rows
+//set number of picker view rows
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     return 1;
@@ -84,6 +84,6 @@ numberOfRowsInComponent:(NSInteger)component{
     
         [defaults setInteger:self.typeSelected forKey:@"type"];
         [defaults synchronize];
-    //type selected saved in user defaults
+    //type selected value saved in user defaults to change table view data displayed
 }
 @end

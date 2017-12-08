@@ -20,7 +20,9 @@
     
     self.restaurantLabel.text = self.booking.restaurant;
     self.dateLabel.text = self.booking.date;
+    self.timeLabel.text = self.booking.time;
     self.noOfGuestsLabel.text = (@"Number of guests: %@",[NSString stringWithFormat:@"Number of guests: %li", (long)self.booking.noOfGuests]);
+    //labels set to booking data
     
 }
 
@@ -42,7 +44,23 @@
 - (IBAction)cancelButtonPress:(UIButton *)sender {
     
     NSUserDefaults *restaurantStore = [NSUserDefaults standardUserDefaults];
-    [restaurantStore setObject:NULL forKey:[NSString stringWithFormat:@"restaurantKey%ld", (long)self.booking.key]];
+    [restaurantStore setObject:NULL forKey:[NSString stringWithFormat:@"restaurantValKey%ld", (long)self.booking.key]];
+    //contents of primary key set to null for deletion 
+    
     NSLog(@"Reservation cancelled");
+    
+    UIAlertController* confirmationMessage = [UIAlertController alertControllerWithTitle:@"Reservation cancelled"
+                                                                                 message:@"Go back to see other current reservations"
+                                                                          preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {}];
+    
+    [confirmationMessage addAction:defaultAction];
+    
+    [self presentViewController:confirmationMessage animated:YES completion:nil];
+    
+    //confirmation message displayed
+
+    
 }
 @end

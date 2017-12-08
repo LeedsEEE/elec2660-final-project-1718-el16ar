@@ -10,7 +10,7 @@
 #import "BookingDataModel.h"
 #import "ExistingBookingsViewController.h"
 
-@interface BookingsViewController : UIViewController
+@interface BookingsViewController : UIViewController <UIAlertViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *restaurantLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;

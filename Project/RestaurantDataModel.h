@@ -16,7 +16,4 @@
 @property (strong, nonatomic) NSMutableArray *IndianRestaurants;
 @property (strong, nonatomic) NSMutableArray *ThaiRestaurants;
 
-
-
-
 @end

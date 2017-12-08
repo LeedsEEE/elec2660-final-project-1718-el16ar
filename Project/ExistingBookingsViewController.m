@@ -5,6 +5,7 @@
 //  Created by Andrew Roy [el16ar] on 04/12/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
+// reloadData and refreshRow functions from https://stackoverflow.com/questions/7722711/reload-uitableview-data-without-reloading-the-view
 
 #import "ExistingBookingsViewController.h"
 #
@@ -16,10 +17,6 @@
 @end
 
 @implementation ExistingBookingsViewController 
-@synthesize managedObjectContext;
-@synthesize fetchedResultsController;
-@synthesize fetchedObjects;
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,12 +26,25 @@
 
 - (void) viewDidAppear:(BOOL)animated{
     self.data = [[BookingDataModel alloc] init];
+    [self.bookingTableView reloadData];
+    [self refreshRows];
+    [self.bookingTableView reloadData];
+    //data reloaded into table
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+- (void)refreshRows {
+    //row data removed
+}
+
+
+#pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)bookingTableView {
     return 1;
@@ -56,17 +66,6 @@
     return cell;
     
 }
-   /*
-    - (void)controllerWillChangeContent:(NSFetchedResultsController *)controller
-    {
-        
-    }
-    */
-
-    - (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath
-    {
-        
-    }
 
 
 #pragma mark - Navigation
