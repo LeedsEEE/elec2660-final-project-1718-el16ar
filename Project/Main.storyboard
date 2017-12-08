@@ -79,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G2T-U2-Clk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3768.115942028986" y="-153.2608695652174"/>
+            <point key="canvasLocation" x="-87812" y="-39401"/>
         </scene>
         <!--Create Reservation-->
         <scene sceneID="zmK-w5-RbV">
@@ -97,7 +97,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eLp-LE-QTB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2958" y="-152"/>
+            <point key="canvasLocation" x="-88620" y="-39398"/>
         </scene>
         <!--Restaurants Table View Controller-->
         <scene sceneID="9fv-jd-XkQ">
@@ -137,7 +137,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uMO-W0-Sxw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4588" y="-152"/>
+            <point key="canvasLocation" x="-86993" y="-39398"/>
         </scene>
         <!--Restaurant View Controller-->
         <scene sceneID="xMW-Jj-3I2">
@@ -245,7 +245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fRZ-mA-ruz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5432.8000000000002" y="-152.47376311844079"/>
+            <point key="canvasLocation" x="-86145" y="-39398"/>
         </scene>
         <!--Existing Reservations-->
         <scene sceneID="VMe-p1-v5t">
@@ -262,7 +262,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3bl-Ea-1OG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2958" y="581"/>
+            <point key="canvasLocation" x="-88620" y="-38667"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Msh-HY-xY9">
@@ -280,7 +280,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d3O-bV-q2Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1924" y="260"/>
+            <point key="canvasLocation" x="-90300" y="-39091"/>
         </scene>
         <!--Existing Reservations-->
         <scene sceneID="nOk-bN-lqg">
@@ -357,7 +357,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FOD-E5-Qdf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3768.75" y="580.078125"/>
+            <point key="canvasLocation" x="-87812" y="-38669"/>
         </scene>
         <!--Bookings View Controller-->
         <scene sceneID="AFH-Fn-Yla">
@@ -462,7 +462,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="stn-QS-a0W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4588" y="580.65967016491754"/>
+            <point key="canvasLocation" x="-86993" y="-38667"/>
         </scene>
         <!--Booking Create View Controller-->
         <scene sceneID="g2w-OV-W4A">
@@ -553,7 +553,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zxi-9w-iEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6264.8000000000002" y="-152.47376311844079"/>
+            <point key="canvasLocation" x="-85313" y="-39398"/>
         </scene>
         <!--Create Reservation-->
         <scene sceneID="cBe-uI-OIR">
@@ -568,7 +568,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EhE-3H-K0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2958" y="-152"/>
+            <point key="canvasLocation" x="-88620" y="-39400"/>
         </scene>
     </scenes>
     <resources>

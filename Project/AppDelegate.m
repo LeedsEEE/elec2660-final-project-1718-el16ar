@@ -5,6 +5,7 @@
 //  Created by Andrew Roy [el16ar] on 14/11/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
+// App icon from: http://www.pvhc.net/2017/07/page/1403/
 
 #import "AppDelegate.h"
 

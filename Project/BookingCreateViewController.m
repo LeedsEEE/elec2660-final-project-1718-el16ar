@@ -141,12 +141,9 @@
         [confirmationMessage addAction:defaultAction];
         
         [self presentViewController:confirmationMessage animated:YES completion:nil];
-            
             //confirmation message displayed
-        
-          //  [[self navigationController] popToViewController:controller animated:YES];
 
-            
+    
             }
         }
     }

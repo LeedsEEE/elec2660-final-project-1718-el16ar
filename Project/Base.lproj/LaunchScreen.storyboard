@@ -30,7 +30,6 @@
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="table-restaurant-1024x669.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fPx-NN-qx3">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="273" id="7WS-6F-xat"/>
                                     <constraint firstAttribute="height" constant="152" id="CHY-s0-eyI"/>
                                     <constraint firstAttribute="width" secondItem="fPx-NN-qx3" secondAttribute="height" multiplier="1024:669" id="fp0-9t-OaY"/>
                                 </constraints>
